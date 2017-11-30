@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="35152" started-at="2017-11-30T12:30:16Z" finished-at="2017-11-30T12:30:51Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="35152" started-at="2017-11-30T12:30:16Z" finished-at="2017-11-30T12:30:51Z">
+      <class name="com.way2AutomationComponents.DragAndDropControls">
+        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:com.way2AutomationComponents.DragAndDropControls@1ec2012]" name="launchWebsite" is-config="true" duration-ms="10183" started-at="2017-11-30T18:00:16Z" finished-at="2017-11-30T18:00:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWebsite -->
+        <test-method status="PASS" signature="loginToWay2Automation()[pri:0, instance:com.way2AutomationComponents.DragAndDropControls@1ec2012]" name="loginToWay2Automation" duration-ms="15182" started-at="2017-11-30T18:00:27Z" finished-at="2017-11-30T18:00:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToWay2Automation -->
+        <test-method status="PASS" signature="DraggableBox()[pri:0, instance:com.way2AutomationComponents.DragAndDropControls@1ec2012]" name="DraggableBox" duration-ms="2670" started-at="2017-11-30T18:00:42Z" depends-on-methods="com.way2AutomationComponents.DragAndDropControls.loginToWay2Automation" finished-at="2017-11-30T18:00:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DraggableBox -->
+        <test-method status="PASS" signature="DroppableBox()[pri:0, instance:com.way2AutomationComponents.DragAndDropControls@1ec2012]" name="DroppableBox" duration-ms="7088" started-at="2017-11-30T18:00:44Z" depends-on-methods="com.way2AutomationComponents.DragAndDropControls.DraggableBox" finished-at="2017-11-30T18:00:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DroppableBox -->
+      </class> <!-- com.way2AutomationComponents.DragAndDropControls -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

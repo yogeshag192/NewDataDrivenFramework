@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Test Suite]">
+  <test name="Test Assignment(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.test.TestGmail">
+        <methods>
+          <include name="login"/>
+          <include name="verifyComposeAndSendEmail"/>
+          <include name="logout"/>
+          <include name="verifyInbox"/>
+          <include name="launch"/>
+          <include name="quit"/>
+          <include name="setVacationResponder"/>
+        </methods>
+      </class> <!-- com.test.TestGmail -->
+    </classes>
+  </test> <!-- Test Assignment(failed) -->
+</suite> <!-- Failed suite [Test Suite] -->
