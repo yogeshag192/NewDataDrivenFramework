@@ -6,6 +6,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -48,22 +49,28 @@ public class RecruitPage extends Base {
 		int currentPageNumber ;
 		
 		for(int i = 1; i<=numberOfPages ; i++){
-			List<WebElement> recruitElements = driver.findElements(By.xpath("//*[@id='game_content']//span[contains(@class,'recruit_button')]"));
+			List<WebElement> recruitElements = driver.findElements(By.xpath("//*[@id='game_content']/div[5]/span"));
 			System.out.println("Total number of recruit links : " +recruitElements.size());
 			
 			WebDriverWait wait = new WebDriverWait(driver, 60);
-			wait.until(ExpectedConditions.visibilityOfAllElements(recruitElements));
-			System.out.println("All elements are visible..");
+			//wait.until(ExpectedConditions.visibilityOfAllElements(recruitElements));
+			//System.out.println("All elements are visible..");
 			
 			currentPageNumber = Integer.parseInt (select.getFirstSelectedOption().getText().toString());
 			System.out.println("Current Page Number : " +currentPageNumber);
 			
-			Iterator<WebElement> it = recruitElements.iterator();
+			for(WebElement recruitBut : recruitElements){
+				
+			JavascriptExecutor executor = (JavascriptExecutor)driver;
+			executor.executeScript("arguments[0].click();", recruitBut);
+			Thread.sleep(2000);
+			}			
+			/*Iterator<WebElement> it = recruitElements.iterator();
 			while(it.hasNext()){
 				WebElement recBut = it.next();
 				recBut.click();
 				Thread.sleep(2000);
-			}
+			}*/
 			/*for(WebElement recruitBut : recruitElements.){
 	
 				recruitBut.click();
