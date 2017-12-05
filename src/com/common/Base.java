@@ -37,7 +37,7 @@ public class Base {
 	
 	public void launchURL(String url) throws InterruptedException{
 		
-	  //System.setProperty("webdriver.firefox.bin", "E:\\Users\\agrawaly\\AppData\\Local\\Mozilla Firefox\\firefox.exe");
+		System.setProperty("webdriver.firefox.bin", "E:\\Users\\agrawaly\\AppData\\Local\\Mozilla Firefox\\firefox.exe");
 		driver = new FirefoxDriver(); 
 		System.out.println("Opening URL: " +url);
 		 driver.get(url);
