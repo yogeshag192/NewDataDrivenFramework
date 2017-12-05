@@ -24,7 +24,7 @@ public class ResizableComponent extends Base {
 		action.moveToElement(dragBox).build().perform();
 		System.out.println("Moved to Element DragBox : " +dragBox.getLocation().toString());
 		action.dragAndDropBy(dragBox, 550, 100).build().perform();
-		System.out.println("Drag Performed..!"); 
+		System.out.println("Drag Performed...!!"); 
 		
 		
 		
