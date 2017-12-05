@@ -3,14 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.way2AutomationComponents.DragAndDropControls">
+      <class name="com.way2AutomationComponents.ResizableComponent">
         <methods>
-          <include name="loginToWay2Automation"/>
-          <include name="DraggableBox"/>
           <include name="launchWebsite"/>
-          <include name="DroppableBox"/>
+          <include name="DraggableBox"/>
         </methods>
-      </class> <!-- com.way2AutomationComponents.DragAndDropControls -->
+      </class> <!-- com.way2AutomationComponents.ResizableComponent -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

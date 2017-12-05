@@ -1,29 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="40683" started-at="2017-12-05T09:32:50Z" finished-at="2017-12-05T09:33:31Z">
+  <suite name="Default suite" duration-ms="33298" started-at="2017-12-05T11:19:17Z" finished-at="2017-12-05T11:19:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="40683" started-at="2017-12-05T09:32:50Z" finished-at="2017-12-05T09:33:31Z">
-      <class name="com.way2AutomationComponents.DragAndDropControls">
-        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:com.way2AutomationComponents.DragAndDropControls@1ec2012]" name="launchWebsite" is-config="true" duration-ms="13561" started-at="2017-12-05T15:02:50Z" finished-at="2017-12-05T15:03:03Z">
+    <test name="Default test" duration-ms="33298" started-at="2017-12-05T11:19:17Z" finished-at="2017-12-05T11:19:50Z">
+      <class name="com.way2AutomationComponents.ResizableComponent">
+        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:com.way2AutomationComponents.ResizableComponent@1ec2012]" name="launchWebsite" is-config="true" duration-ms="29253" started-at="2017-12-05T16:49:17Z" finished-at="2017-12-05T16:49:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchWebsite -->
-        <test-method status="PASS" signature="loginToWay2Automation()[pri:0, instance:com.way2AutomationComponents.DragAndDropControls@1ec2012]" name="loginToWay2Automation" duration-ms="15869" started-at="2017-12-05T15:03:03Z" finished-at="2017-12-05T15:03:19Z">
+        <test-method status="PASS" signature="ResizableBox()[pri:0, instance:com.way2AutomationComponents.ResizableComponent@1ec2012]" name="ResizableBox" duration-ms="4024" started-at="2017-12-05T16:49:46Z" finished-at="2017-12-05T16:49:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginToWay2Automation -->
-        <test-method status="PASS" signature="DraggableBox()[pri:0, instance:com.way2AutomationComponents.DragAndDropControls@1ec2012]" name="DraggableBox" duration-ms="3975" started-at="2017-12-05T15:03:19Z" depends-on-methods="com.way2AutomationComponents.DragAndDropControls.loginToWay2Automation" finished-at="2017-12-05T15:03:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DraggableBox -->
-        <test-method status="PASS" signature="DroppableBox()[pri:0, instance:com.way2AutomationComponents.DragAndDropControls@1ec2012]" name="DroppableBox" duration-ms="7256" started-at="2017-12-05T15:03:23Z" depends-on-methods="com.way2AutomationComponents.DragAndDropControls.DraggableBox" finished-at="2017-12-05T15:03:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DroppableBox -->
-      </class> <!-- com.way2AutomationComponents.DragAndDropControls -->
+        </test-method> <!-- ResizableBox -->
+      </class> <!-- com.way2AutomationComponents.ResizableComponent -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
