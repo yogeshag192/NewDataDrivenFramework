@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.way2AutomationComponents.ResizableComponent">
+      <class name="com.way2AutomationComponents.DatePicker">
         <methods>
           <include name="launchWebsite"/>
-          <include name="DraggableBox"/>
+          <include name="launchDatePickerControls"/>
+          <include name="defaultCalendar"/>
         </methods>
-      </class> <!-- com.way2AutomationComponents.ResizableComponent -->
+      </class> <!-- com.way2AutomationComponents.DatePicker -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
