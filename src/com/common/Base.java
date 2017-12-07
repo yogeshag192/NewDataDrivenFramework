@@ -10,6 +10,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -188,6 +190,8 @@ public class Base {
 	
 	
 	
+	
+	
 	//Amazon base methods
 	
 	public void clearCart() throws InterruptedException, IOException{
@@ -338,6 +342,28 @@ public class Base {
 					Thread.sleep(6000);
 					System.out.println(cap + " Capacity is not present hence Selected Other Available Capacity : " +capList.get(0).getText());
 			}
+		
+	}
+	
+	//------------------------------Way 2 Automation Base Methods-----------------------//
+	
+	public String getStatusOfDate(String myDate) throws ParseException{
+		
+		GregorianCalendar calendar = new GregorianCalendar();
+		Date today = calendar.getTime();
+		DateFormat formatter = new SimpleDateFormat("dd/MMM/yyyy");
+		Date newDateObject = (Date)formatter.parse(myDate);
+		System.out.println(newDateObject);
+		System.out.println(today);
+		if (newDateObject.before(today)){
+			return "before";
+		}else if (newDateObject.after(today)){
+			return "after";
+		}
+		else{
+			return "same";
+		}
+		
 		
 	}
 	
