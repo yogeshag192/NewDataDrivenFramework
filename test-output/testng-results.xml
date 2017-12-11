@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="66992" started-at="2017-12-11T13:20:41Z" finished-at="2017-12-11T13:21:48Z">
+  <suite name="Default suite" duration-ms="66676" started-at="2017-12-11T13:39:07Z" finished-at="2017-12-11T13:40:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="66992" started-at="2017-12-11T13:20:41Z" finished-at="2017-12-11T13:21:48Z">
+    <test name="Default test" duration-ms="66676" started-at="2017-12-11T13:39:07Z" finished-at="2017-12-11T13:40:13Z">
       <class name="com.way2AutomationComponents.DatePicker">
-        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:com.way2AutomationComponents.DatePicker@3884b2]" name="launchWebsite" is-config="true" duration-ms="53105" started-at="2017-12-11T18:50:41Z" finished-at="2017-12-11T18:51:35Z">
+        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:com.way2AutomationComponents.DatePicker@3884b2]" name="launchWebsite" is-config="true" duration-ms="51578" started-at="2017-12-11T19:09:07Z" finished-at="2017-12-11T19:09:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchWebsite -->
-        <test-method status="PASS" signature="launchDatePickerControls()[pri:0, instance:com.way2AutomationComponents.DatePicker@3884b2]" name="launchDatePickerControls" duration-ms="1568" started-at="2017-12-11T18:51:35Z" finished-at="2017-12-11T18:51:36Z">
+        <test-method status="PASS" signature="launchDatePickerControls()[pri:0, instance:com.way2AutomationComponents.DatePicker@3884b2]" name="launchDatePickerControls" duration-ms="1462" started-at="2017-12-11T19:09:58Z" finished-at="2017-12-11T19:10:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchDatePickerControls -->
-        <test-method status="PASS" signature="defaultCalendar()[pri:0, instance:com.way2AutomationComponents.DatePicker@3884b2]" name="defaultCalendar" duration-ms="12297" started-at="2017-12-11T18:51:36Z" depends-on-methods="com.way2AutomationComponents.DatePicker.launchDatePickerControls" finished-at="2017-12-11T18:51:48Z">
+        <test-method status="PASS" signature="defaultCalendar()[pri:0, instance:com.way2AutomationComponents.DatePicker@3884b2]" name="defaultCalendar" duration-ms="13613" started-at="2017-12-11T19:10:00Z" depends-on-methods="com.way2AutomationComponents.DatePicker.launchDatePickerControls" finished-at="2017-12-11T19:10:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- defaultCalendar -->
