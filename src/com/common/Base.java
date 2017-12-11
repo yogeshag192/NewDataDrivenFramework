@@ -24,6 +24,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -39,8 +40,13 @@ public class Base {
 	
 	public void launchURL(String url) throws InterruptedException{
 		
-		System.setProperty("webdriver.firefox.bin", "E:\\Users\\agrawaly\\AppData\\Local\\Mozilla Firefox\\firefox.exe");
-		driver = new FirefoxDriver(); 
+		
+		
+		//System.setProperty("webdriver.firefox.bin", "D:\\Users\\agrawaly\\AppData\\Local\\Mozilla Firefox\\firefox.exe");
+		//System.setProperty("webdriver.gecko.driver", "D:\\Users\\agrawaly\\Downloads\\geckodriver\\geckodriver.exe"); 
+		String chromeDriverPath = "D:\\Users\\agrawaly\\Downloads\\chromedriver_win32\\chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", chromeDriverPath);
+		driver = new ChromeDriver(); 
 		System.out.println("Opening URL: " +url);
 		 driver.get(url);
 		 driver.manage().window().maximize();

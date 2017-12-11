@@ -22,7 +22,6 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.common.Base;
-import com.thoughtworks.selenium.webdriven.commands.WaitForPageToLoad;
 
 
 public class TestAmazon extends Base {

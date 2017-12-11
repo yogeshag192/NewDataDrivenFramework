@@ -3,9 +3,9 @@ package com.way2AutomationComponents;
 import java.io.IOException;
 
 import com.common.Base;
-import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptExecutor;
+
 import com.google.common.base.*;
-import com.thoughtworks.selenium.webdriven.commands.WaitForPageToLoad;
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
