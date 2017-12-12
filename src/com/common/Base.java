@@ -26,12 +26,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.server.browserlaunchers.Sleeper;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import com.way2AutomationComponents.DragAndDropControls;
 
 public class Base {
 	public static WebDriver driver;
@@ -39,8 +44,6 @@ public class Base {
 	
 	
 	public void launchURL(String url) throws InterruptedException{
-		
-		
 		
 		//System.setProperty("webdriver.firefox.bin", "D:\\Users\\agrawaly\\AppData\\Local\\Mozilla Firefox\\firefox.exe");
 		//System.setProperty("webdriver.gecko.driver", "D:\\Users\\agrawaly\\Downloads\\geckodriver\\geckodriver.exe"); 
@@ -176,6 +179,22 @@ public class Base {
 	    }
 	}
 	
+	public void waitForPageToLoad(String timeOutInSeconds) {
+		String windowTitle = driver.getTitle();
+		int time = Integer.parseInt(timeOutInSeconds);
+		int pageLength = 0;
+		for (int second = 0;; second++) {
+			if (second >= time) {
+				fail("Timeout... Page load could not complete in " + timeOutInSeconds + " seconds");
+			}
+			if (pageLength == driver.getPageSource().length() && windowTitle != driver.getTitle()) {
+				break;
+			}
+			Sleeper.sleepTight(500);
+			pageLength = driver.getPageSource().length();
+		}
+	}
+	
 	public void selectTomorrowsDateFromCalendar(){
 		List<WebElement> calendars = driver.findElements(By.xpath("//input[@class='sE' and @readonly ='readonly']"));
 		calendars.get(0).click();
@@ -194,9 +213,16 @@ public class Base {
 		clickElement(newDatePath);
 	}
 	
-	
-	
-	
+	public boolean isAlertPresent(){
+		try{
+		driver.switchTo().alert();
+		return true;
+		}
+		catch(NoAlertPresentException ex){
+		return false;
+		}
+				
+}
 	
 	//Amazon base methods
 	
@@ -240,18 +266,6 @@ public class Base {
 			clickElement(getElementValue("continueShippingButton"));
 			Thread.sleep(6000);
 		}
-	}
-	
-	
-	public boolean isAlertPresent(){
-			try{
-			driver.switchTo().alert();
-			return true;
-			}
-			catch(NoAlertPresentException ex){
-			return false;
-			}
-					
 	}
 	
 	public void checkOutfromSameSeller() throws InterruptedException, AWTException, IOException{
@@ -353,6 +367,7 @@ public class Base {
 	
 	//------------------------------Way 2 Automation Base Methods-----------------------//
 	
+	
 	public String getStatusOfDate(String myDate) throws ParseException{
 		
 		GregorianCalendar calendar = new GregorianCalendar();
@@ -373,4 +388,17 @@ public class Base {
 		
 	}
 	
+	//-------------------------------CIL Portal Base Methods---------------//
+	
+	public void loginToCILPortal() throws IOException, InterruptedException{
+		waitForElementToBeClickable(getElementValue("signInLinkWay2"));
+		clickElement(getElementValue("signInLinkWay2"));
+		waitForElementToBeVisible(getElementValue("userNameWay2"));
+		type(getElementValue("userNameWay2"), getInputValue("way2UserName"));
+		type(getElementValue("PasswordWay2"), getInputValue("way2Password"));
+		clickElement(getElementValue("submitButtonWay2"));
+		Thread.sleep(9000);
+		
+			
+	}
 }

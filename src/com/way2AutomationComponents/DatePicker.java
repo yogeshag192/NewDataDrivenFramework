@@ -19,14 +19,14 @@ import com.common.Base;
 
 public class DatePicker extends Base {
 
-	@BeforeTest
+	/*@BeforeTest
 	public void launchWebsite() throws InterruptedException, IOException {
 		launchURL("http://way2automation.com/way2auto_jquery/index.php");
 		waitForPageToLoad(driver);
 		System.out.println("On way2automation Page..");
 		DragAndDropControls d = new DragAndDropControls();
 		d.loginToWay2Automation();
-	}
+	}*/
 
 	@Test
 	public void launchDatePickerControls() throws InterruptedException {

@@ -5,21 +5,14 @@ import java.io.IOException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.common.Base;
 
 public class AutoComplete extends Base {
-	@BeforeTest
-	public void launchWebsite() throws InterruptedException, IOException{
-		launchURL("http://way2automation.com/way2auto_jquery/index.php");
-		waitForPageToLoad(driver);
-		System.out.println("On way2automation Page..");
-		DragAndDropControls d = new DragAndDropControls();
-		d.loginToWay2Automation();
-	}
-	
 	
 	@Test
 	public void AutocompleteBox() throws InterruptedException{
