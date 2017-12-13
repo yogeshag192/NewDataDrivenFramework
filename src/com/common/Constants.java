@@ -2,11 +2,15 @@ package com.common;
 
 public class Constants {
 
-	public static String CONFIGURATION_PATH = "Add path for config file";
-	public static String INPUT_DATA_FILE = "Add path for input data file";
-	public static String WEBELEMENT_FILE = "Add path for input data file";
-	public static String DOWNLOAD_DIRECTORY = System.getProperty("user.dir") + "\\downloads\\";
-	public static String CHROME_DRIVER_PATH = System.getProperty("user.dir") +"\\Downloads\\chromedriver_win32\\chromedriver.exe";
-	public static String IE_DRIVER_PATH = System.getProperty("user.dir") +"\\Downloads\\iedriver\\iedriver.exe";
+	public static String CONFIGURATION_PATH = System.getProperty("user.dir") +"\\Files\\config.properties";
+	public static String INPUT_DATA_FILE = System.getProperty("user.dir") +"\\Files\\input.properties";
+	public static String WEBELEMENT_FILE = System.getProperty("user.dir") +"\\Files\\webElement.properties";
+	public static String DOWNLOAD_DIRECTORY = System.getProperty("user.dir") + "\\Downloads\\";
+	public static String CHROME_DRIVER_PATH = System.getProperty("user.dir") +"\\Files\\chromedriver.exe";
+	public static String IE_DRIVER_PATH = System.getProperty("user.dir") +"\\Files\\IEDriverServer.exe";
 	
+	
+	public static void main(String[] args) {
+		System.out.println(CHROME_DRIVER_PATH);
+	}
 }
