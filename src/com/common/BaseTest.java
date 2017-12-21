@@ -18,6 +18,7 @@ import org.testng.ITestContext;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 import com.way2AutomationComponents.DragAndDropControls;
 
@@ -28,8 +29,9 @@ public class BaseTest extends Base{
 	protected Properties configProperties;
 
 
-	@BeforeClass(alwaysRun = true)
-	@Parameters({ "browser" })
+	//@BeforeClass(alwaysRun = true)
+	//@Parameters({ "browser" })
+	@Test
 	public void setUp(String browser) throws InterruptedException, IOException{
 		try {
 			LoadProperties();
@@ -42,7 +44,7 @@ public class BaseTest extends Base{
 		configProperties = PropertiesUtil.readInputArguments();
 		String portal = configProperties.getProperty("portal");
 		
-		setupSeleniumWebDriver(browser);
+		setupSeleniumWebDriver("Chrome");
 		
 		loginToApplication(portal);
 		
@@ -92,7 +94,7 @@ public class BaseTest extends Base{
 	
 	
 	
-	@AfterClass
+	//@AfterClass
 	public void tearDown(){
 		driver.close();
 	}

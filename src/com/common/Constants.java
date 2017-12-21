@@ -10,7 +10,5 @@ public class Constants {
 	public static String IE_DRIVER_PATH = System.getProperty("user.dir") +"\\Files\\IEDriverServer.exe";
 	
 	
-	public static void main(String[] args) {
-		System.out.println(CHROME_DRIVER_PATH);
-	}
 }
+

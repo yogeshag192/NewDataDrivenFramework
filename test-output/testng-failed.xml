@@ -1,26 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Test Suite]">
-  <test name="Framework Test Suite(failed)">
-    <parameter name="browser" value="Chrome"/>
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.way2AutomationComponents.AutoComplete">
+      <class name="com.common.BaseTest">
         <methods>
-          <include name="AutocompleteBox"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.way2AutomationComponents.AutoComplete -->
-      <class name="com.way2AutomationComponents.DatePicker">
-        <methods>
-          <include name="launchDatePickerControls"/>
-          <include name="defaultCalendar"/>
-        </methods>
-      </class> <!-- com.way2AutomationComponents.DatePicker -->
-      <class name="com.way2AutomationComponents.DragAndDropControls">
-        <methods>
-          <include name="DraggableBox"/>
-          <include name="DroppableBox"/>
-        </methods>
-      </class> <!-- com.way2AutomationComponents.DragAndDropControls -->
+      </class> <!-- com.common.BaseTest -->
     </classes>
-  </test> <!-- Framework Test Suite(failed) -->
-</suite> <!-- Failed suite [Test Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
