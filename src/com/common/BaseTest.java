@@ -32,9 +32,10 @@ public class BaseTest extends Base{
 	//@BeforeClass(alwaysRun = true)
 	//@Parameters({ "browser" })
 	@Test
-	public void setUp(String browser) throws InterruptedException, IOException{
+	public void setUp() throws InterruptedException, IOException{
 		try {
 			LoadProperties();
+			System.out.println("Loaded Properties files..");
 		} catch (FileNotFoundException e) {
 			System.out.println("Properties file was not found..");
 		} catch (IOException e) {
@@ -42,23 +43,23 @@ public class BaseTest extends Base{
 		}
 		
 		configProperties = PropertiesUtil.readInputArguments();
+		System.out.println("Loaded config arguments..");
 		String portal = configProperties.getProperty("portal");
+		System.out.println("portal selected is : " +portal);
 		
-		setupSeleniumWebDriver("Chrome");
+		setupSeleniumWebDriver("IE");
 		
 		loginToApplication(portal);
 		
 	}
-		
-		
 		
 	public WebDriver setupSeleniumWebDriver(String browser) {
 			try {
 				if (browser.equals("Firefox")) {
 					System.out.println("Setting up FireFox Driver.");
 
-					System.setProperty("webdriver.firefox.bin", "D:\\Users\\agrawaly\\AppData\\Local\\Mozilla Firefox\\firefox.exe");
-					System.setProperty("webdriver.gecko.driver", "D:\\Users\\agrawaly\\Downloads\\geckodriver\\geckodriver.exe"); 
+					String geckoDriverPath = System.getProperty("user.dir") +"\\Files\\geckodriver.exe";
+					System.setProperty("webdriver.gecko.driver", geckoDriverPath); 
 					
 					FirefoxProfile profile = new FirefoxProfile();
 					profile.setPreference("browser.download.folderList", 2);
@@ -92,8 +93,6 @@ public class BaseTest extends Base{
 		}
 
 	
-	
-	
 	//@AfterClass
 	public void tearDown(){
 		driver.close();
@@ -115,6 +114,7 @@ public class BaseTest extends Base{
 	
 	
 	public void loginToApplication(String portal) {
+		System.out.println("In LoginToApplication Method");
     	
     	String appUrl, userName ,password;
        	    	
@@ -134,6 +134,8 @@ public class BaseTest extends Base{
         	driver.get(appUrl);
             waitForPageToLoad(driver);
             driver.manage().window().maximize();
+            
+            break;
         
             
         default:

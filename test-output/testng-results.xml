@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32" started-at="2017-12-21T07:01:19Z" finished-at="2017-12-21T07:01:19Z">
+  <suite name="Default suite" duration-ms="5624" started-at="2017-12-21T12:14:24Z" finished-at="2017-12-21T12:14:30Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32" started-at="2017-12-21T07:01:19Z" finished-at="2017-12-21T07:01:19Z">
+    <test name="Default test" duration-ms="5624" started-at="2017-12-21T12:14:24Z" finished-at="2017-12-21T12:14:30Z">
       <class name="com.common.BaseTest">
-        <test-method status="FAIL" signature="setUp(java.lang.String)[pri:0, instance:com.common.BaseTest@b1ffe6]" name="setUp" duration-ms="0" started-at="2017-12-21T12:31:19Z" finished-at="2017-12-21T12:31:19Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[Cannot inject @Test annotated Method [setUp] with [class java.lang.String].For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: Cannot inject @Test annotated Method [setUp] with [class java.lang.String].For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injectionat org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)at org.testng.internal.Parameters.createParameters(Parameters.java:635)at org.testng.internal.Parameters.handleParameters(Parameters.java:769)at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:914)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.common.BaseTest@76a3e297]" name="setUp" duration-ms="5591" started-at="2017-12-21T17:44:24Z" finished-at="2017-12-21T17:44:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
