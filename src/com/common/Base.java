@@ -35,20 +35,23 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import com.way2AutomationComponents.DragAndDropControls;
 
 public class Base {
 	public static WebDriver driver;
 	public Properties appProperties;
+	public static Properties webElementProperties;
 	
+	
+	public Base(WebDriver driver) {
+		this.driver = driver;
+		Base.webElementProperties = PropertiesUtil.getWebElementProperties();
+		this.appProperties = PropertiesUtil.getAppProperties();
+	}
 	
 	public void launchURL(String url) throws InterruptedException{
 		
-		//System.setProperty("webdriver.firefox.bin", "D:\\Users\\agrawaly\\AppData\\Local\\Mozilla Firefox\\firefox.exe");
-		//System.setProperty("webdriver.gecko.driver", "D:\\Users\\agrawaly\\Downloads\\geckodriver\\geckodriver.exe"); 
-		String chromeDriverPath = "D:\\Users\\agrawaly\\Downloads\\chromedriver_win32\\chromedriver.exe";
-		System.setProperty("webdriver.chrome.driver", chromeDriverPath);
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		driver = new ChromeDriver(); 
 		System.out.println("Opening URL: " +url);
 		 driver.get(url);
@@ -63,14 +66,14 @@ public class Base {
 	}
 	
 	public String getElementValue(String propertyName) throws IOException {
-		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + File.separator + "webElement.properties");
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") +"\\Files\\webElement.properties");
 		appProperties = new Properties();
 		appProperties.load(fis);
 		return appProperties.getProperty(propertyName);
 	}
 	
 	public String getInputValue(String propertyName) throws IOException {
-		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + File.separator + "input.properties");
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") +"\\Files\\input.properties");
 		appProperties = new Properties();
 		appProperties.load(fis);
 		return appProperties.getProperty(propertyName);
@@ -81,6 +84,8 @@ public class Base {
 		By by = null;
 		String locatorType = webElementProperty.substring(0, 2);
 		String elementId = webElementProperty.substring(3, webElementProperty.length() - 1);
+	
+		System.out.println("Current Element id is : " +elementId);
 		if (locatorType.equals("xp")) // xpath
 		{
 			by = By.xpath(elementId);
@@ -125,9 +130,9 @@ public class Base {
 		By by = parseLocator(locator);
 		WebElement ele = driver.findElement(by);
 		ele.click();
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
 		ele.sendKeys(text);
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
 	}
 	
 	public void waitForElementToBeVisible(String locator){
@@ -147,6 +152,16 @@ public class Base {
 		
 	}
 	
+	public boolean isElementPresentAndDisplayed(WebElement ele){
+		if(ele.isDisplayed()&&ele.isEnabled()){
+			return true;
+		}
+		else{
+			return false;
+		}
+		
+	}
+	
 	public void waitForElementToBeClickable(String locator) {
 		WebDriverWait wait = new WebDriverWait(driver, 60);
 		wait.until(ExpectedConditions.elementToBeClickable(parseLocator(locator)));
@@ -154,13 +169,13 @@ public class Base {
 	
 	public void clickElement(String locator) {
 		By by = parseLocator(locator);
-		WebElement ele = driver.findElement(by);
-		if (ele == null || (!ele.isEnabled())) {
-			fail("Did not find element to click : " + ele.getAttribute("id"));
+		WebElement element = driver.findElement(by);
+		if (element == null || (!element.isEnabled())) {
+			fail("Did not find element to click : " + element.getAttribute("id"));
 		}
 		WebDriverWait wait = new WebDriverWait(driver, 120);
-		ele = wait.until(ExpectedConditions.elementToBeClickable(by));
-		ele.click();
+		element = wait.until(ExpectedConditions.elementToBeClickable(by));
+		element.click();
 		
 	}
 	
@@ -191,7 +206,7 @@ public class Base {
 				break;
 			}
 			try {
-				Thread.sleep(5000);
+				Thread.sleep(4000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -393,17 +408,4 @@ public class Base {
 		
 	}
 	
-	//-------------------------------CIL Portal Base Methods---------------//
-	
-	public void loginToCILPortal() throws IOException, InterruptedException{
-		waitForElementToBeClickable(getElementValue("signInLinkWay2"));
-		clickElement(getElementValue("signInLinkWay2"));
-		waitForElementToBeVisible(getElementValue("userNameWay2"));
-		type(getElementValue("userNameWay2"), getInputValue("way2UserName"));
-		type(getElementValue("PasswordWay2"), getInputValue("way2Password"));
-		clickElement(getElementValue("submitButtonWay2"));
-		Thread.sleep(9000);
-		
-			
-	}
 }

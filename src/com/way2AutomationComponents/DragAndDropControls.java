@@ -9,6 +9,7 @@ import com.google.common.base.*;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.BeforeTest;
@@ -17,15 +18,20 @@ import org.testng.annotations.Test;
 public class DragAndDropControls extends Base {
 	
 	
-	/*
+	
+	public DragAndDropControls(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+
 	@BeforeTest
 	public void launchWebsite() throws InterruptedException, IOException{
 		launchURL("http://way2automation.com/way2auto_jquery/draggable.php");
 		waitForPageToLoad(driver);
 		System.out.println("On draggable Page..");
-	}*/
+	}
 	
-	//@Test
+	@Test
 	public void loginToWay2Automation() throws IOException, InterruptedException{
 		waitForElementToBeClickable(getElementValue("signInLinkWay2"));
 		clickElement(getElementValue("signInLinkWay2"));
@@ -38,7 +44,7 @@ public class DragAndDropControls extends Base {
 			
 	}
 	
-	@Test//(dependsOnMethods = "loginToWay2Automation")
+	@Test(dependsOnMethods = "loginToWay2Automation")
 	public void DraggableBox() throws InterruptedException{
 		/*JavascriptExecutor es = (JavascriptExecutor) driver;
 		WebElement element = driver.findElement(By.xpath("//img[@src = 'images/draggable.jpg']"));

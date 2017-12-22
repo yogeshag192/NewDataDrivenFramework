@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Locale;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.BeforeTest;
@@ -27,6 +28,11 @@ public class DatePicker extends Base {
 		DragAndDropControls d = new DragAndDropControls();
 		d.loginToWay2Automation();
 	}*/
+
+	public DatePicker(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
 
 	@Test
 	public void launchDatePickerControls() throws InterruptedException {

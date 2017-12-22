@@ -3,6 +3,7 @@ package com.way2AutomationComponents;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.BeforeTest;
@@ -13,12 +14,18 @@ import com.common.Base;
 public class ResizableComponent extends Base {
 
 	
+	public ResizableComponent(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+
+
 	@BeforeTest
 	public void launchWebsite() throws InterruptedException, IOException{
 		launchURL("http://way2automation.com/way2auto_jquery/index.php");
 		waitForPageToLoad(driver);
 		System.out.println("On way2automation Page..");
-		DragAndDropControls d = new DragAndDropControls();
+		DragAndDropControls d = new DragAndDropControls(driver);
 		d.loginToWay2Automation();
 	}
 	

@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Test Suite" parallel="none">
+<suite name="Test Suite: CIL Test Suit" parallel="none">
 
-   <test name="Framework Test Suite">
+   <test name="CIL Test Cases">
    	<parameter name="browser" value="Chrome" ></parameter>
       <classes>
-      
-      	 <class name="com.common.BaseTest"></class>
-      	<class name="com.way2AutomationComponents.AutoComplete"/>
-       	 <class name="com.way2AutomationComponents.DatePicker"/>
-         <class name="com.way2AutomationComponents.DragAndDropControls"/>
+      	<class name="com.cil.ui.TestCILPortal"/>
        </classes>
+       
    </test>
 </suite>

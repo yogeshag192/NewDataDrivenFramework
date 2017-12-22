@@ -3,6 +3,7 @@ package com.way2AutomationComponents;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.BeforeClass;
@@ -14,6 +15,11 @@ import com.common.Base;
 
 public class AutoComplete extends Base {
 	
+	public AutoComplete(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+
 	@Test
 	public void AutocompleteBox() throws InterruptedException{
 		

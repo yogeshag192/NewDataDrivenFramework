@@ -2,16 +2,27 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5624" started-at="2017-12-21T12:14:24Z" finished-at="2017-12-21T12:14:30Z">
+  <suite name="Test Suite: CIL Test Suit" duration-ms="13838" started-at="2017-12-22T10:18:33Z" finished-at="2017-12-22T10:18:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5624" started-at="2017-12-21T12:14:24Z" finished-at="2017-12-21T12:14:30Z">
-      <class name="com.common.BaseTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.common.BaseTest@76a3e297]" name="setUp" duration-ms="5591" started-at="2017-12-21T17:44:24Z" finished-at="2017-12-21T17:44:30Z">
+    <test name="CIL Test Cases" duration-ms="13838" started-at="2017-12-22T10:18:33Z" finished-at="2017-12-22T10:18:47Z">
+      <class name="com.cil.ui.TestCILPortal">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.cil.ui.TestCILPortal@77ec78b9]" name="setUp" is-config="true" duration-ms="8784" started-at="2017-12-22T15:48:33Z" finished-at="2017-12-22T15:48:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-      </class> <!-- com.common.BaseTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method status="PASS" signature="VerifyCILHomePageComponents()[pri:0, instance:com.cil.ui.TestCILPortal@77ec78b9]" name="VerifyCILHomePageComponents" duration-ms="5021" started-at="2017-12-22T15:48:42Z" finished-at="2017-12-22T15:48:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyCILHomePageComponents -->
+      </class> <!-- com.cil.ui.TestCILPortal -->
+    </test> <!-- CIL Test Cases -->
+  </suite> <!-- Test Suite: CIL Test Suit -->
 </testng-results>

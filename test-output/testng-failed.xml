@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Test Suite: CIL Test Suit]">
+  <test name="CIL Test Cases(failed)">
+    <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="com.common.BaseTest">
+      <class name="com.cil.ui.TestCILPortal">
         <methods>
           <include name="setUp"/>
+          <include name="VerifyCILHomePageComponents"/>
         </methods>
-      </class> <!-- com.common.BaseTest -->
+      </class> <!-- com.cil.ui.TestCILPortal -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- CIL Test Cases(failed) -->
+</suite> <!-- Failed suite [Test Suite: CIL Test Suit] -->

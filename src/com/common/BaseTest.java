@@ -22,17 +22,18 @@ import org.testng.annotations.Test;
 
 import com.way2AutomationComponents.DragAndDropControls;
 
-public class BaseTest extends Base{
-	protected WebDriver driver;
+public class BaseTest{
+
+	protected static WebDriver driver;
 	protected Properties webElementProperties;
 	protected Properties appProperties;
 	protected Properties configProperties;
+	
+		// Runs before every test class
 
-
-	//@BeforeClass(alwaysRun = true)
-	//@Parameters({ "browser" })
-	@Test
-	public void setUp() throws InterruptedException, IOException{
+	@BeforeClass(alwaysRun = true)
+	@Parameters({ "browser" })
+	public void setUp(String browser) throws InterruptedException, IOException{
 		try {
 			LoadProperties();
 			System.out.println("Loaded Properties files..");
@@ -47,9 +48,10 @@ public class BaseTest extends Base{
 		String portal = configProperties.getProperty("portal");
 		System.out.println("portal selected is : " +portal);
 		
-		setupSeleniumWebDriver("IE");
+		setupSeleniumWebDriver(browser);
 		
-		loginToApplication(portal);
+		LoginToApp login = new LoginToApp(driver);
+		login.loginToApplication(portal);
 		
 	}
 		
@@ -57,11 +59,13 @@ public class BaseTest extends Base{
 			try {
 				if (browser.equals("Firefox")) {
 					System.out.println("Setting up FireFox Driver.");
-
-					String geckoDriverPath = System.getProperty("user.dir") +"\\Files\\geckodriver.exe";
-					System.setProperty("webdriver.gecko.driver", geckoDriverPath); 
 					
-					FirefoxProfile profile = new FirefoxProfile();
+					String geckoDriverPath = System.getProperty("user.dir") +"\\Files\\geckodriver.exe";
+					System.out.println(geckoDriverPath);
+					System.setProperty("webdriver.firefox.marrionete", geckoDriverPath); 
+					driver = new FirefoxDriver();
+
+					/*FirefoxProfile profile = new FirefoxProfile();
 					profile.setPreference("browser.download.folderList", 2);
 					profile.setPreference("browser.download.dir", Constants.DOWNLOAD_DIRECTORY);
 					profile.setPreference("browser.download.useDownloadDir", true);
@@ -69,7 +73,7 @@ public class BaseTest extends Base{
 		
 					DesiredCapabilities caps=DesiredCapabilities.firefox();
 					caps.setCapability(FirefoxDriver.PROFILE, profile);
-					driver =  new FirefoxDriver(caps);
+					driver =  new FirefoxDriver(caps);*/
 					
 				} else if (browser.equals("IE")) {
 					System.out.println("Setting up Internet Explorer Driver.");
@@ -104,7 +108,7 @@ public class BaseTest extends Base{
 	}
 	
 	public String getElementValue(String propertyName) throws IOException {
-		return appProperties.getProperty(propertyName);
+		return webElementProperties.getProperty(propertyName);
 	}
 	
 	public String getInputValue(String propertyName) throws IOException {
@@ -112,35 +116,4 @@ public class BaseTest extends Base{
 		
 	}
 	
-	
-	public void loginToApplication(String portal) {
-		System.out.println("In LoginToApplication Method");
-    	
-    	String appUrl, userName ,password;
-       	    	
-        switch (portal) {
-        case "CIL":
-         
-            break;
-            
-        case "BLOCKCHAIN":
-            
-            break; 
-            
-        case "WAY2A":
-        	appUrl = configProperties.getProperty("URL");
-        	userName = appProperties.getProperty("way2UserName");
-        	password = appProperties.getProperty("way2Password");
-        	driver.get(appUrl);
-            waitForPageToLoad(driver);
-            driver.manage().window().maximize();
-            
-            break;
-        
-            
-        default:
-            System.out.println("Something is wrong!!!!! Should not be in DEFAULT");
-        }
-
-    }
 	}
