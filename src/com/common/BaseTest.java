@@ -62,7 +62,7 @@ public class BaseTest{
 					
 					String geckoDriverPath = System.getProperty("user.dir") +"\\Files\\geckodriver.exe";
 					System.out.println(geckoDriverPath);
-					System.setProperty("webdriver.firefox.marrionete", geckoDriverPath); 
+					System.setProperty("webdriver.gecko.driver", geckoDriverPath); 
 					driver = new FirefoxDriver();
 
 					/*FirefoxProfile profile = new FirefoxProfile();
@@ -84,6 +84,7 @@ public class BaseTest{
 					System.out.println("Setting up Chrome Driver.");
 					System.setProperty("webdriver.chrome.driver", Constants.CHROME_DRIVER_PATH);
 					driver = new ChromeDriver();
+					driver.manage().window().maximize();
 				} 
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 
@@ -97,7 +98,7 @@ public class BaseTest{
 		}
 
 	
-	//@AfterClass
+	@AfterClass
 	public void tearDown(){
 		driver.close();
 	}

@@ -35,6 +35,7 @@ public class CILPageMethods extends Base{
 		componentList.add("Trending Ideas");
 		componentList.add("Opinion Poll");
 		
+		System.out.println("-----Verifying Components on the Home Screen..");
 		for(String counter : componentList){
 			String pageSource = driver.getPageSource();
 			if (pageSource.contains(counter)){
@@ -44,12 +45,13 @@ public class CILPageMethods extends Base{
 		}
 		
 		// Verify Links on the page
+		System.out.println("\n" +"-----Verifying Links on the Home Screen..");
 		
 		List<WebElement> links = new ArrayList<WebElement>();
 		links = driver.findElements(By.xpath("//a[@class = 'dash-menu-adjust cilFont']"));
 		for(WebElement linkElement : links){
 			Assert.assertTrue(isElementPresentAndDisplayed(linkElement), "Element is not present!");
-			System.out.println("Element Link : " +linkElement.getText());
+			System.out.println("Link Verified : " +linkElement.getText());
 		}
 		
 	

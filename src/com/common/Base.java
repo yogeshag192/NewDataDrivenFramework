@@ -85,7 +85,7 @@ public class Base {
 		String locatorType = webElementProperty.substring(0, 2);
 		String elementId = webElementProperty.substring(3, webElementProperty.length() - 1);
 	
-		System.out.println("Current Element id is : " +elementId);
+		System.out.println("Current Element id : " +elementId);
 		if (locatorType.equals("xp")) // xpath
 		{
 			by = By.xpath(elementId);

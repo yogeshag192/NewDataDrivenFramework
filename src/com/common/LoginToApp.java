@@ -23,9 +23,7 @@ public class LoginToApp extends Base {
         	password = appProperties.getProperty("cilPassword");
         	driver.get(appUrl);
         	 waitForPageToLoad(driver);
-             driver.manage().window().maximize();
-             System.out.println(getElementValue("loginLinkHomePage"));
-             
+             //driver.manage().window().maximize();
              clickElement(getElementValue("loginLinkHomePage"));
              type(getElementValue("userNameTextBox"), getInputValue("cilUsername"));
              type(getElementValue("passwordTextBox"), getInputValue("cilPassword"));
