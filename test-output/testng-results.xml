@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Test Suite: CIL Test Suit" duration-ms="13838" started-at="2017-12-22T10:18:33Z" finished-at="2017-12-22T10:18:47Z">
+  <suite name="Test Suite: CIL Test Suit" duration-ms="14554" started-at="2017-12-22T11:44:24Z" finished-at="2017-12-22T11:44:38Z">
     <groups>
     </groups>
-    <test name="CIL Test Cases" duration-ms="13838" started-at="2017-12-22T10:18:33Z" finished-at="2017-12-22T10:18:47Z">
+    <test name="CIL Test Cases" duration-ms="14554" started-at="2017-12-22T11:44:24Z" finished-at="2017-12-22T11:44:38Z">
       <class name="com.cil.ui.TestCILPortal">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.cil.ui.TestCILPortal@77ec78b9]" name="setUp" is-config="true" duration-ms="8784" started-at="2017-12-22T15:48:33Z" finished-at="2017-12-22T15:48:42Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.cil.ui.TestCILPortal@77ec78b9]" name="setUp" is-config="true" duration-ms="7788" started-at="2017-12-22T17:14:24Z" finished-at="2017-12-22T17:14:31Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,12 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="VerifyCILHomePageComponents()[pri:0, instance:com.cil.ui.TestCILPortal@77ec78b9]" name="VerifyCILHomePageComponents" duration-ms="5021" started-at="2017-12-22T15:48:42Z" finished-at="2017-12-22T15:48:47Z">
+        <test-method status="FAIL" signature="VerifyCILHomePageComponents()[pri:0, instance:com.cil.ui.TestCILPortal@77ec78b9]" name="VerifyCILHomePageComponents" duration-ms="6729" started-at="2017-12-22T17:14:32Z" finished-at="2017-12-22T17:14:38Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerExceptionat com.cil.ui.CILPageMethods.VerifyCILHomePageComponents(CILPageMethods.java:40)at com.cil.ui.TestCILPortal.VerifyCILHomePageComponents(TestCILPortal.java:17)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCILHomePageComponents -->
