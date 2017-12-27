@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.lang.reflect.Method;
 import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -15,11 +16,19 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestContext;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 import com.way2AutomationComponents.DragAndDropControls;
 
 public class BaseTest{
@@ -28,6 +37,47 @@ public class BaseTest{
 	protected Properties webElementProperties;
 	protected Properties appProperties;
 	protected Properties configProperties;
+	
+	public static ExtentReports extent;
+	public static ExtentTest test;
+	
+	@BeforeSuite
+	public void beforeSuiteSetup(){
+		System.out.println("Setting up extent report config..");
+		extent = new ExtentReports(System.getProperty("user.dir")+ "/extent-output/ExtentExecutionReport.html",true);
+		extent.addSystemInfo("HostName", "Yogesh")
+		.addSystemInfo("Environment", "QA")
+		.addSystemInfo("User Name", " Yogesh Agrawal");
+		extent.loadConfig(new File(System.getProperty("user.dir")+ "/extent-config.xml"));
+	}
+	
+	@BeforeMethod
+	public void beforeMethodSetup(Method method){
+		System.out.println("In BeforeMethodSetup Method..");
+		test = extent.startTest(("Class: " +this.getClass().getSimpleName() + " :: " +method.getName()), method.getName());
+		test.assignAuthor("Author : Yogesh").assignCategory("Smoke Tests");
+		
+	}
+	
+	  @AfterMethod
+	    public void getResult(ITestResult result) throws IOException
+	    {
+	        if(result.getStatus() == ITestResult.FAILURE)
+	        {
+	            String screenShotPath = GetScreenShot.capture(driver, "Screenshot-"+System.currentTimeMillis());
+	            test.log(LogStatus.FAIL, result.getThrowable());
+	            test.log(LogStatus.FAIL, "Snapshot below: " + test.addScreenCapture(screenShotPath));
+	        }
+	        extent.endTest(test);
+	    }
+	
+	@AfterSuite
+	public void endReport(){
+		extent.flush();
+		
+		//extent.close();
+		
+	}
 	
 		// Runs before every test class
 
