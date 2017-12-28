@@ -1,6 +1,9 @@
 package com.cil.ui;
 
 import org.testng.annotations.Test;
+
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import com.common.Base;
@@ -11,25 +14,24 @@ public class TestCILPortal extends BaseTest {
 	
 	
 	@Test
-	public void VerifyCILHomePageComponents() throws InterruptedException
+	public void VerifyCILDashboardComponents() throws InterruptedException
 	{
-	
 		System.out.println("\n-------------------- IN CIL - HOME SCREEN TESTCASES ---------------------------");
 		CILPageMethods cilM = new CILPageMethods(driver);
-		System.out.println("Started execution of :: VerifyCILHomePageComponents");
-		cilM.VerifyCILHomePageComponents();
-		System.out.println("Completed execution of :: VerifyCILHomePageComponents");
+		System.out.println("Started execution of :: VerifyCILDashboardComponents");
+		cilM.VerifyCILDashboardComponents();
+		System.out.println("Completed execution of :: VerifyCILDashboardComponents");
 		System.out.println("-----------------------------------------------------------------\n");
 	}
 	
 	@Test
-	public void VerifyCILHomePageLinks() throws InterruptedException
+	public void VerifyLinksOnCILDashboard() throws InterruptedException
 	{
 		
 		CILPageMethods cilM = new CILPageMethods(driver);
-		System.out.println("Started execution of :: VerifyCILHomePageLinks");
-		cilM.VerifyCILHomePageLinks();
-		System.out.println("Completed execution of :: VerifyCILHomePageLinks");
+		System.out.println("Started execution of :: VerifyLinksOnCILDashboard");
+		cilM.VerifyLinksOnCILDashboard();
+		System.out.println("Completed execution of :: VerifyLinksOnCILDashboard");
 		System.out.println("-----------------------------------------------------------------\n");
 	}
 	
@@ -53,6 +55,18 @@ public class TestCILPortal extends BaseTest {
 		System.out.println("Started execution of :: VerifyOnGoingProjects");
 		cilM.VerifyOnGoingProjects();
 		System.out.println("Completed execution of :: VerifyOnGoingProjects");
+		System.out.println("-----------------------------------------------------------------\n");
+	
+		
+	}
+	
+	@Test
+	public void zVerifyLinksOnCILHomePage() throws IOException{
+		
+		CILPageMethods cilM = new CILPageMethods(driver);
+		System.out.println("Started execution of :: VerifyLinksOnCILHomePage");
+		cilM.VerifyLinksOnCILHomePage();
+		System.out.println("Completed execution of :: VerifyLinksOnCILHomePage");
 		System.out.println("-----------------------------------------------------------------\n");
 	
 		

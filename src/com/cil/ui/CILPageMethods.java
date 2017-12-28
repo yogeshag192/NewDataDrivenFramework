@@ -1,5 +1,6 @@
 package com.cil.ui;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,7 +24,29 @@ public class CILPageMethods extends Base{
 	
 	
 	//Test Case Methods start here
-	public void VerifyCILHomePageComponents() {
+	public void VerifyLinksOnCILHomePage() throws IOException{
+		// Verify Links on the page
+		System.out.println("\n" +"-----Verifying Links on the Home Page..");
+		
+		clickElement(getElementValue("logoutButton"));
+		waitForPageToLoad("30");
+		List<WebElement> links = new ArrayList<WebElement>();
+		links = driver.findElements(By.xpath("//ul[@class = 'nav navbar-nav navbar-right']/li/a"));
+		
+		if (links.isEmpty()){
+			BaseTest.test.log(LogStatus.FAIL, "Test Failed : No Links Present on Home Page!");
+		}
+		else {
+			BaseTest.test.log(LogStatus.PASS, links.size()+" Links are Present on Home Page.");
+		}
+		for(WebElement linkElement : links){
+			Assert.assertTrue(isElementPresentAndDisplayed(linkElement), "Assert Failed!");
+			System.out.println("Link Verified : " +linkElement.getText());
+			BaseTest.test.log(LogStatus.PASS,  linkElement.getText() +" : Link is verified");
+		}
+	}
+	
+	public void VerifyCILDashboardComponents() {
 		
 		//String allAvailableComponentsPath = "//div[Contains(@class ,'panel-heading')]";
 		//Verify tabs on Home Page
@@ -37,10 +60,9 @@ public class CILPageMethods extends Base{
 		componentList.add("Lab Visits");
 		componentList.add("Trending Ideas");
 		componentList.add("Opinion Poll");
-		componentList.add("Superior Poll");
-		componentList.add("Upcoming Innovation");
+		//componentList.add("Upcoming Options");
 		
-		System.out.println("-----Verifying Components on the Home Screen..");
+		System.out.println("-----Verifying Components on the Dashboard..");
 		for(String counter : componentList){
 			String pageSource = driver.getPageSource();
 			if (pageSource.contains(counter)){
@@ -56,18 +78,18 @@ public class CILPageMethods extends Base{
 	
 	}
 	
-	public void VerifyCILHomePageLinks(){
+	public void VerifyLinksOnCILDashboard(){
 		// Verify Links on the page
-		System.out.println("\n" +"-----Verifying Links on the Home Screen..");
+		System.out.println("\n" +"-----Verifying Links on the Dashboard..");
 		
 		List<WebElement> links = new ArrayList<WebElement>();
 		links = driver.findElements(By.xpath("//a[@class = 'dash-menu-adjust cilFont']"));
 		
-		if (links.size()==0){
-			BaseTest.test.log(LogStatus.FAIL, "Test Failed : No Links Present on Home Screen");
+		if (links.isEmpty()){
+			BaseTest.test.log(LogStatus.FAIL, "Test Failed : No Links Present on Dashboard");
 		}
 		else {
-			BaseTest.test.log(LogStatus.PASS, links.size()+" Links are Present on Home Screen ");
+			BaseTest.test.log(LogStatus.PASS, links.size()+" Links are Present on Dashboard");
 		}
 		for(WebElement linkElement : links){
 			Assert.assertTrue(isElementPresentAndDisplayed(linkElement));
@@ -83,17 +105,15 @@ public class CILPageMethods extends Base{
 		BaseTest.test.log(LogStatus.FAIL, "Assert Failed as condition is false.");
 	}
 
-	
-	
 	public void VerifyOnGoingProjects() throws InterruptedException{
 		List<WebElement> onGoingProjectList;
 		
-		//Internal Projects
-		System.out.println("Verifying Internal Projects..");
+		//Verify Internal Projects
+		BaseTest.test.log(LogStatus.INFO, "Task: Verify Internal Projects.");
 		onGoingProjectList = driver.findElements(By.xpath("//div[@id = 'projects-pane-1']//button"));
 		
 		if(onGoingProjectList.isEmpty()){
-			BaseTest.test.log(LogStatus.FATAL, "There are no internal Projects or the refrenced xpath has been changed!");
+			BaseTest.test.log(LogStatus.ERROR, "There are no internal Projects or the refrenced xpath has been changed!");
 		}
 		
 		for (WebElement options : onGoingProjectList){
@@ -107,12 +127,12 @@ public class CILPageMethods extends Base{
 		
 		//Verify External, Projects
 		
-		System.out.println("Verifying External Projects..");
+		BaseTest.test.log(LogStatus.INFO, "Task: Verify External Projects.");
 		driver.findElement(By.xpath("//a[@id = 'projects-tab-2']")).click();
 		onGoingProjectList = driver.findElements(By.xpath("//div[@id = 'projects-pane-2']//button"));
 		
 		if(onGoingProjectList.isEmpty()){
-			BaseTest.test.log(LogStatus.FATAL, "There are no external Projects or the refrenced xpath has been changed!");
+			BaseTest.test.log(LogStatus.FAIL, "There are no external Projects or the refrenced xpath has been changed!");
 		}
 		
 		for (WebElement options : onGoingProjectList){
@@ -123,8 +143,10 @@ public class CILPageMethods extends Base{
 			Thread.sleep(2000);
 			BaseTest.test.log(LogStatus.PASS, options.getText()+ " Project is Verified..");
 		}
+		BaseTest.test.log(LogStatus.PASS, " ----All Ongoing Projects Verified Successfully----");
 		
 		
 	
 	}
+
 }

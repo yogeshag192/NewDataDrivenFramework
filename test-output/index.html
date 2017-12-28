@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -116,17 +116,22 @@
                     <div class="method-list-content passed suite-Test_Suite:_CIL_Test_Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite:_CIL_Test_Suite" title="com.cil.ui.TestCILPortal" hash-for-method="VerifyCILHomePageComponents">VerifyCILHomePageComponents</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite:_CIL_Test_Suite" title="com.cil.ui.TestCILPortal" hash-for-method="VerifyCILDashboardComponents">VerifyCILDashboardComponents</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite:_CIL_Test_Suite" title="com.cil.ui.TestCILPortal" hash-for-method="VerifyCILHomePageLinks">VerifyCILHomePageLinks</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite:_CIL_Test_Suite" title="com.cil.ui.TestCILPortal" hash-for-method="VerifyLinksOnCILDashboard">VerifyLinksOnCILDashboard</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Test_Suite:_CIL_Test_Suite" title="com.cil.ui.TestCILPortal" hash-for-method="VerifyOnGoingProjects">VerifyOnGoingProjects</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite:_CIL_Test_Suite" title="com.cil.ui.TestCILPortal" hash-for-method="zVerifyLinksOnCILHomePage">zVerifyLinksOnCILHomePage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Test_Suite:_CIL_Test_Suite -->
@@ -153,8 +158,8 @@
                   </a> <!-- test7 -->
                   <span class="method-name">test7</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at com.cil.ui.CILPageMethods.VerifyTest7(CILPageMethods.java:82)
-	at com.cil.ui.TestCILPortal.test7(TestCILPortal.java:42)
+	at com.cil.ui.CILPageMethods.VerifyTest7(CILPageMethods.java:104)
+	at com.cil.ui.TestCILPortal.test7(TestCILPortal.java:44)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -169,16 +174,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifyCILHomePageComponents">
-                  </a> <!-- VerifyCILHomePageComponents -->
-                  <span class="method-name">VerifyCILHomePageComponents</span>
+                  <a name="VerifyCILDashboardComponents">
+                  </a> <!-- VerifyCILDashboardComponents -->
+                  <span class="method-name">VerifyCILDashboardComponents</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifyCILHomePageLinks">
-                  </a> <!-- VerifyCILHomePageLinks -->
-                  <span class="method-name">VerifyCILHomePageLinks</span>
+                  <a name="VerifyLinksOnCILDashboard">
+                  </a> <!-- VerifyLinksOnCILDashboard -->
+                  <span class="method-name">VerifyLinksOnCILDashboard</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -186,6 +191,13 @@
                   <a name="VerifyOnGoingProjects">
                   </a> <!-- VerifyOnGoingProjects -->
                   <span class="method-name">VerifyOnGoingProjects</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="zVerifyLinksOnCILHomePage">
+                  </a> <!-- zVerifyLinksOnCILHomePage -->
+                  <span class="method-name">zVerifyLinksOnCILHomePage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -243,28 +255,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'VerifyOnGoingProjects')
 data.setCell(0, 2, 'com.cil.ui.TestCILPortal')
-data.setCell(0, 3, 21595);
+data.setCell(0, 3, 21415);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'VerifyCILHomePageComponents')
+data.setCell(1, 1, 'zVerifyLinksOnCILHomePage')
 data.setCell(1, 2, 'com.cil.ui.TestCILPortal')
-data.setCell(1, 3, 4849);
+data.setCell(1, 3, 4875);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'VerifyCILHomePageLinks')
+data.setCell(2, 1, 'VerifyCILDashboardComponents')
 data.setCell(2, 2, 'com.cil.ui.TestCILPortal')
-data.setCell(2, 3, 189);
+data.setCell(2, 3, 4819);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'test7')
+data.setCell(3, 1, 'VerifyLinksOnCILDashboard')
 data.setCell(3, 2, 'com.cil.ui.TestCILPortal')
-data.setCell(3, 3, 3);
+data.setCell(3, 3, 174);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'test7')
+data.setCell(4, 2, 'com.cil.ui.TestCILPortal')
+data.setCell(4, 3, 3);
 window.suiteTableData['Test_Suite:_CIL_Test_Suite']= { tableData: data, tableDiv: 'times-div-Test_Suite:_CIL_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 26 seconds</span>
+              <span class="suite-total-time">Total running time: 31 seconds</span>
               <div id="times-div-Test_Suite:_CIL_Test_Suite">
               </div> <!-- times-div-Test_Suite:_CIL_Test_Suite -->
             </div> <!-- times-div -->
@@ -297,65 +313,77 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(Chrome)</span>
-                <span class="method-start">245 ms</span>
+                <span class="method-start">255 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethodSetup(public void com.cil.ui.TestCILPortal.VerifyCILHomePageComponents() throws java.lang.InterruptedExcep...)</span>
-                <span class="method-start">7300 ms</span>
+                <span class="method-name">beforeMethodSetup(public void com.cil.ui.TestCILPortal.VerifyCILDashboardComponents() throws java.lang.InterruptedExce...)</span>
+                <span class="method-start">7556 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">VerifyCILHomePageComponents</span>
-                <span class="method-start">7306 ms</span>
+                <span class="method-name">VerifyCILDashboardComponents</span>
+                <span class="method-start">7562 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=VerifyCILHomePageComponents status=SUCCESS method=TestCILPortal.VerifyCILHomePageCo...)</span>
-                <span class="method-start">12158 ms</span>
+                <span class="method-name">getResult([TestResult name=VerifyCILDashboardComponents status=SUCCESS method=TestCILPortal.VerifyCILDashboard...)</span>
+                <span class="method-start">12383 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethodSetup(public void com.cil.ui.TestCILPortal.VerifyCILHomePageLinks() throws java.lang.InterruptedException)</span>
-                <span class="method-start">12161 ms</span>
+                <span class="method-name">beforeMethodSetup(public void com.cil.ui.TestCILPortal.VerifyLinksOnCILDashboard() throws java.lang.InterruptedExcepti...)</span>
+                <span class="method-start">12387 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">VerifyCILHomePageLinks</span>
-                <span class="method-start">12161 ms</span>
+                <span class="method-name">VerifyLinksOnCILDashboard</span>
+                <span class="method-start">12388 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=VerifyCILHomePageLinks status=SUCCESS method=TestCILPortal.VerifyCILHomePageLinks()...)</span>
-                <span class="method-start">12352 ms</span>
+                <span class="method-name">getResult([TestResult name=VerifyLinksOnCILDashboard status=SUCCESS method=TestCILPortal.VerifyLinksOnCILDashb...)</span>
+                <span class="method-start">12565 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethodSetup(public void com.cil.ui.TestCILPortal.VerifyOnGoingProjects() throws java.lang.InterruptedException)</span>
-                <span class="method-start">12353 ms</span>
+                <span class="method-start">12566 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyOnGoingProjects</span>
-                <span class="method-start">12353 ms</span>
+                <span class="method-start">12567 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=VerifyOnGoingProjects status=SUCCESS method=TestCILPortal.VerifyOnGoingProjects()[p...)</span>
-                <span class="method-start">33950 ms</span>
+                <span class="method-start">33984 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethodSetup(public void com.cil.ui.TestCILPortal.test7())</span>
-                <span class="method-start">33952 ms</span>
+                <span class="method-start">33987 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">test7</span>
-                <span class="method-start">33953 ms</span>
+                <span class="method-start">33987 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=test7 status=FAILURE method=TestCILPortal.test7()[pri:0, instance:com.cil.ui.TestCI...)</span>
-                <span class="method-start">33962 ms</span>
+                <span class="method-start">33995 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethodSetup(public void com.cil.ui.TestCILPortal.zVerifyLinksOnCILHomePage() throws java.io.IOException)</span>
+                <span class="method-start">34379 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">zVerifyLinksOnCILHomePage</span>
+                <span class="method-start">34379 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=zVerifyLinksOnCILHomePage status=SUCCESS method=TestCILPortal.zVerifyLinksOnCILHome...)</span>
+                <span class="method-start">39256 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">34344 ms</span>
+                <span class="method-start">39256 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">36476 ms</span>
+                <span class="method-start">41365 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

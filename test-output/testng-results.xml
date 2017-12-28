@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Test Suite: CIL Test Suite" duration-ms="36201" started-at="2017-12-28T07:07:25Z" finished-at="2017-12-28T07:08:01Z">
+  <suite name="Test Suite: CIL Test Suite" duration-ms="41085" started-at="2017-12-28T11:31:47Z" finished-at="2017-12-28T11:32:28Z">
     <groups>
     </groups>
-    <test name="CIL Test Cases" duration-ms="36201" started-at="2017-12-28T07:07:25Z" finished-at="2017-12-28T07:08:01Z">
+    <test name="CIL Test Cases" duration-ms="41085" started-at="2017-12-28T11:31:47Z" finished-at="2017-12-28T11:32:28Z">
       <class name="com.cil.ui.TestCILPortal">
-        <test-method status="PASS" signature="beforeSuiteSetup()[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="beforeSuiteSetup" is-config="true" duration-ms="232" started-at="2017-12-28T12:37:24Z" finished-at="2017-12-28T12:37:25Z">
+        <test-method status="PASS" signature="beforeSuiteSetup()[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="beforeSuiteSetup" is-config="true" duration-ms="244" started-at="2017-12-28T17:01:47Z" finished-at="2017-12-28T17:01:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuiteSetup -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="setUp" is-config="true" duration-ms="7047" started-at="2017-12-28T12:37:25Z" finished-at="2017-12-28T12:37:32Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="setUp" is-config="true" duration-ms="7294" started-at="2017-12-28T17:01:47Z" finished-at="2017-12-28T17:01:54Z">
           <params>
             <param index="0">
               <value>
@@ -22,59 +22,59 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="beforeMethodSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="beforeMethodSetup" is-config="true" duration-ms="6" started-at="2017-12-28T12:37:32Z" finished-at="2017-12-28T12:37:32Z">
+        <test-method status="PASS" signature="beforeMethodSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="beforeMethodSetup" is-config="true" duration-ms="6" started-at="2017-12-28T17:01:54Z" finished-at="2017-12-28T17:01:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.cil.ui.TestCILPortal.VerifyCILHomePageComponents() throws java.lang.InterruptedException]]>
+                <![CDATA[public void com.cil.ui.TestCILPortal.VerifyCILDashboardComponents() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodSetup -->
-        <test-method status="PASS" signature="VerifyCILHomePageComponents()[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="VerifyCILHomePageComponents" duration-ms="4849" started-at="2017-12-28T12:37:32Z" finished-at="2017-12-28T12:37:36Z">
+        <test-method status="PASS" signature="VerifyCILDashboardComponents()[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="VerifyCILDashboardComponents" duration-ms="4819" started-at="2017-12-28T17:01:54Z" finished-at="2017-12-28T17:01:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyCILHomePageComponents -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="getResult" is-config="true" duration-ms="2" started-at="2017-12-28T12:37:36Z" finished-at="2017-12-28T12:37:36Z">
+        </test-method> <!-- VerifyCILDashboardComponents -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="getResult" is-config="true" duration-ms="4" started-at="2017-12-28T17:01:59Z" finished-at="2017-12-28T17:01:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=VerifyCILHomePageComponents status=SUCCESS method=TestCILPortal.VerifyCILHomePageComponents()[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9] output={null}]]]>
+                <![CDATA[[TestResult name=VerifyCILDashboardComponents status=SUCCESS method=TestCILPortal.VerifyCILDashboardComponents()[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="VerifyCILHomePageLinks()[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="VerifyCILHomePageLinks" duration-ms="189" started-at="2017-12-28T12:37:36Z" finished-at="2017-12-28T12:37:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyCILHomePageLinks -->
-        <test-method status="PASS" signature="beforeMethodSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="beforeMethodSetup" is-config="true" duration-ms="0" started-at="2017-12-28T12:37:36Z" finished-at="2017-12-28T12:37:36Z">
+        <test-method status="PASS" signature="beforeMethodSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="beforeMethodSetup" is-config="true" duration-ms="1" started-at="2017-12-28T17:01:59Z" finished-at="2017-12-28T17:01:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.cil.ui.TestCILPortal.VerifyCILHomePageLinks() throws java.lang.InterruptedException]]>
+                <![CDATA[public void com.cil.ui.TestCILPortal.VerifyLinksOnCILDashboard() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodSetup -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="getResult" is-config="true" duration-ms="0" started-at="2017-12-28T12:37:37Z" finished-at="2017-12-28T12:37:37Z">
+        <test-method status="PASS" signature="VerifyLinksOnCILDashboard()[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="VerifyLinksOnCILDashboard" duration-ms="174" started-at="2017-12-28T17:01:59Z" finished-at="2017-12-28T17:01:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLinksOnCILDashboard -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="getResult" is-config="true" duration-ms="0" started-at="2017-12-28T17:01:59Z" finished-at="2017-12-28T17:01:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=VerifyCILHomePageLinks status=SUCCESS method=TestCILPortal.VerifyCILHomePageLinks()[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9] output={null}]]]>
+                <![CDATA[[TestResult name=VerifyLinksOnCILDashboard status=SUCCESS method=TestCILPortal.VerifyLinksOnCILDashboard()[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethodSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="beforeMethodSetup" is-config="true" duration-ms="0" started-at="2017-12-28T12:37:37Z" finished-at="2017-12-28T12:37:37Z">
+        <test-method status="PASS" signature="beforeMethodSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="beforeMethodSetup" is-config="true" duration-ms="1" started-at="2017-12-28T17:01:59Z" finished-at="2017-12-28T17:01:59Z">
           <params>
             <param index="0">
               <value>
@@ -85,11 +85,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodSetup -->
-        <test-method status="PASS" signature="VerifyOnGoingProjects()[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="VerifyOnGoingProjects" duration-ms="21595" started-at="2017-12-28T12:37:37Z" finished-at="2017-12-28T12:37:58Z">
+        <test-method status="PASS" signature="VerifyOnGoingProjects()[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="VerifyOnGoingProjects" duration-ms="21415" started-at="2017-12-28T17:01:59Z" finished-at="2017-12-28T17:02:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyOnGoingProjects -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="getResult" is-config="true" duration-ms="1" started-at="2017-12-28T12:37:58Z" finished-at="2017-12-28T12:37:58Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="getResult" is-config="true" duration-ms="2" started-at="2017-12-28T17:02:21Z" finished-at="2017-12-28T17:02:21Z">
           <params>
             <param index="0">
               <value>
@@ -100,7 +100,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethodSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="beforeMethodSetup" is-config="true" duration-ms="1" started-at="2017-12-28T12:37:58Z" finished-at="2017-12-28T12:37:58Z">
+        <test-method status="FAIL" signature="test7()[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="test7" duration-ms="3" started-at="2017-12-28T17:02:21Z" finished-at="2017-12-28T17:02:21Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertTrue(Assert.java:44)at org.testng.Assert.assertTrue(Assert.java:54)at com.cil.ui.CILPageMethods.VerifyTest7(CILPageMethods.java:104)at com.cil.ui.TestCILPortal.test7(TestCILPortal.java:44)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test7 -->
+        <test-method status="PASS" signature="beforeMethodSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="beforeMethodSetup" is-config="true" duration-ms="0" started-at="2017-12-28T17:02:21Z" finished-at="2017-12-28T17:02:21Z">
           <params>
             <param index="0">
               <value>
@@ -111,19 +123,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodSetup -->
-        <test-method status="FAIL" signature="test7()[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="test7" duration-ms="3" started-at="2017-12-28T12:37:58Z" finished-at="2017-12-28T12:37:58Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertTrue(Assert.java:44)at org.testng.Assert.assertTrue(Assert.java:54)at com.cil.ui.CILPageMethods.VerifyTest7(CILPageMethods.java:82)at com.cil.ui.TestCILPortal.test7(TestCILPortal.java:42)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test7 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="getResult" is-config="true" duration-ms="381" started-at="2017-12-28T12:37:58Z" finished-at="2017-12-28T12:37:59Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="getResult" is-config="true" duration-ms="384" started-at="2017-12-28T17:02:21Z" finished-at="2017-12-28T17:02:21Z">
           <params>
             <param index="0">
               <value>
@@ -134,11 +134,37 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="tearDown" is-config="true" duration-ms="2088" started-at="2017-12-28T12:37:59Z" finished-at="2017-12-28T12:38:01Z">
+        <test-method status="PASS" signature="beforeMethodSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="beforeMethodSetup" is-config="true" duration-ms="0" started-at="2017-12-28T17:02:21Z" finished-at="2017-12-28T17:02:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.cil.ui.TestCILPortal.zVerifyLinksOnCILHomePage() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodSetup -->
+        <test-method status="PASS" signature="zVerifyLinksOnCILHomePage()[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="zVerifyLinksOnCILHomePage" duration-ms="4875" started-at="2017-12-28T17:02:21Z" finished-at="2017-12-28T17:02:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- zVerifyLinksOnCILHomePage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="tearDown" is-config="true" duration-ms="2072" started-at="2017-12-28T17:02:26Z" finished-at="2017-12-28T17:02:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="endReport" is-config="true" duration-ms="610" started-at="2017-12-28T12:38:01Z" finished-at="2017-12-28T12:38:01Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="getResult" is-config="true" duration-ms="0" started-at="2017-12-28T17:02:26Z" finished-at="2017-12-28T17:02:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=zVerifyLinksOnCILHomePage status=SUCCESS method=TestCILPortal.zVerifyLinksOnCILHomePage()[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.cil.ui.TestCILPortal@3ecd23d9]" name="endReport" is-config="true" duration-ms="544" started-at="2017-12-28T17:02:28Z" finished-at="2017-12-28T17:02:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
