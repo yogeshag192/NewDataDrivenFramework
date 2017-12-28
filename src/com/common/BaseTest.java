@@ -66,7 +66,7 @@ public class BaseTest{
 	        {
 	            String screenShotPath = GetScreenShot.capture(driver, "Screenshot-"+System.currentTimeMillis());
 	            test.log(LogStatus.FAIL, result.getThrowable());
-	            test.log(LogStatus.FAIL, "Snapshot below: " + test.addScreenCapture(screenShotPath));
+	            test.log(LogStatus.FAIL, "Snapshot of failed test below: " + test.addScreenCapture(screenShotPath));
 	        }
 	        extent.endTest(test);
 	    }

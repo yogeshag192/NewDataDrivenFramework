@@ -46,4 +46,16 @@ public class TestCILPortal extends BaseTest {
 		
 	}
 	
+	@Test
+	public void VerifyOnGoingProjects() throws InterruptedException{
+		
+		CILPageMethods cilM = new CILPageMethods(driver);
+		System.out.println("Started execution of :: VerifyOnGoingProjects");
+		cilM.VerifyOnGoingProjects();
+		System.out.println("Completed execution of :: VerifyOnGoingProjects");
+		System.out.println("-----------------------------------------------------------------\n");
+	
+		
+	}
+	
 }

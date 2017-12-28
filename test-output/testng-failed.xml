@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Test Suite: CIL Test Suite]">
   <test name="CIL Test Cases(failed)">
-    <parameter name="browser" value="Firefox"/>
+    <parameter name="browser" value="Chrome"/>
     <classes>
       <class name="com.cil.ui.TestCILPortal">
         <methods>

@@ -77,8 +77,54 @@ public class CILPageMethods extends Base{
 	}
 	
 	public void VerifyTest7(){
+		Assert.assertTrue(true);
+		BaseTest.test.log(LogStatus.PASS, "Assert Passed as condition is true.");
 		Assert.assertTrue(false);
 		BaseTest.test.log(LogStatus.FAIL, "Assert Failed as condition is false.");
 	}
 
+	
+	
+	public void VerifyOnGoingProjects() throws InterruptedException{
+		List<WebElement> onGoingProjectList;
+		
+		//Internal Projects
+		System.out.println("Verifying Internal Projects..");
+		onGoingProjectList = driver.findElements(By.xpath("//div[@id = 'projects-pane-1']//button"));
+		
+		if(onGoingProjectList.isEmpty()){
+			BaseTest.test.log(LogStatus.FATAL, "There are no internal Projects or the refrenced xpath has been changed!");
+		}
+		
+		for (WebElement options : onGoingProjectList){
+			options.click();
+			System.out.println("Clicking on Project - " +options.getText());
+			Thread.sleep(2000);
+			driver.findElement(By.xpath("//span[@class='fa fa-close cil-close']")).click();
+			Thread.sleep(2000);
+			BaseTest.test.log(LogStatus.PASS, options.getText()+ " Project is Verified..");
+		}
+		
+		//Verify External, Projects
+		
+		System.out.println("Verifying External Projects..");
+		driver.findElement(By.xpath("//a[@id = 'projects-tab-2']")).click();
+		onGoingProjectList = driver.findElements(By.xpath("//div[@id = 'projects-pane-2']//button"));
+		
+		if(onGoingProjectList.isEmpty()){
+			BaseTest.test.log(LogStatus.FATAL, "There are no external Projects or the refrenced xpath has been changed!");
+		}
+		
+		for (WebElement options : onGoingProjectList){
+			options.click();
+			System.out.println("Clicking on Project - " +options.getText());
+			Thread.sleep(2000);
+			driver.findElement(By.xpath("//span[@class='fa fa-close cil-close']")).click();
+			Thread.sleep(2000);
+			BaseTest.test.log(LogStatus.PASS, options.getText()+ " Project is Verified..");
+		}
+		
+		
+	
+	}
 }
