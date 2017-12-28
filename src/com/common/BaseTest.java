@@ -1,5 +1,6 @@
 package com.common;
 
+import java.awt.event.ActionEvent;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -8,6 +9,12 @@ import java.lang.reflect.Method;
 import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+
+import javax.swing.AbstractAction;
+import javax.swing.JDialog;
+import javax.swing.JOptionPane;
+import javax.swing.Timer;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -42,7 +49,7 @@ public class BaseTest{
 	public static ExtentTest test;
 	
 	@BeforeSuite
-	public void beforeSuiteSetup(){
+	public void beforeSuiteExtentSetup(){
 		System.out.println("Setting up extent report config..");
 		extent = new ExtentReports(System.getProperty("user.dir")+ "/extent-output/ExtentExecutionReport.html",true);
 		extent.addSystemInfo("HostName", "Yogesh")
@@ -52,15 +59,18 @@ public class BaseTest{
 	}
 	
 	@BeforeMethod
-	public void beforeMethodSetup(Method method){
+	public void beforeMethodExtentSetup(Method method){
 		System.out.println("In BeforeMethodSetup Method..");
 		test = extent.startTest(("Class: " +this.getClass().getSimpleName() + " :: " +method.getName()), method.getName());
 		test.assignAuthor("Author : Yogesh").assignCategory("Smoke Tests");
 		
+		//for JOptionPane Display Popup
+		JOptionDialogue(method);
+		
 	}
 	
-	  @AfterMethod
-	    public void getResult(ITestResult result) throws IOException
+	@AfterMethod
+	public void getResult(ITestResult result) throws IOException
 	    {
 	        if(result.getStatus() == ITestResult.FAILURE)
 	        {
@@ -147,7 +157,6 @@ public class BaseTest{
 			return driver;
 		}
 
-	
 	@AfterClass
 	public void tearDown(){
 		driver.close();
@@ -165,6 +174,38 @@ public class BaseTest{
 	public String getInputValue(String propertyName) throws IOException {
 		return appProperties.getProperty(propertyName);
 		
+	}
+	
+	public void JOptionDialogue(Method method){
+		
+		String className = this.getClass().getSimpleName();
+		String methodName = method.getName();
+		String currentRunningTest = "Next Test Run:"+ "\n" +"Class Name: "+className +"\n" +"Method Name: "+methodName;
+		
+		final JOptionPane optionPane = new JOptionPane(currentRunningTest, JOptionPane.INFORMATION_MESSAGE, JOptionPane.DEFAULT_OPTION, null, new Object[]{}, null);
+
+		final JDialog dialog = new JDialog();
+		dialog.setTitle("Information");
+		dialog.setModal(true);
+
+		dialog.setContentPane(optionPane);
+
+		dialog.setDefaultCloseOperation(JDialog.DO_NOTHING_ON_CLOSE);
+		dialog.pack();
+
+		//create timer to dispose of dialog after 5 seconds
+		Timer timer = new Timer(3000, new AbstractAction() {
+			 @Override
+			    public void actionPerformed(ActionEvent ae) {
+			        dialog.dispose();
+			    }
+		});
+		timer.setRepeats(false);//the timer should only go off once
+
+		//start timer to close JDialog as dialog modal we must start the timer before its visible
+		timer.start();
+
+		dialog.setVisible(true);
 	}
 	
 	}
