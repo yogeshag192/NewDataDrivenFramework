@@ -16,7 +16,7 @@ public class TestCILPortal extends BaseTest {
 	@Test
 	public void VerifyCILDashboardComponents() throws InterruptedException
 	{
-		System.out.println("\n-------------------- IN CIL - HOME SCREEN TESTCASES ---------------------------");
+		System.out.println("\n-------------------- IN CIL - DASHBOARD TESTCASES ---------------------------");
 		CILPageMethods cilM = new CILPageMethods(driver);
 		System.out.println("Started execution of :: VerifyCILDashboardComponents");
 		cilM.VerifyCILDashboardComponents();
@@ -60,8 +60,65 @@ public class TestCILPortal extends BaseTest {
 		
 	}
 	
-	@Test
-	public void zVerifyLinksOnCILHomePage() throws IOException{
+	@Test (dependsOnMethods = "VerifyOnGoingProjects")
+	public void VerifyToolsAndTechnologiesOnDashboard() throws InterruptedException{
+		
+		CILPageMethods cilM = new CILPageMethods(driver);
+		System.out.println("Started execution of :: VerifyToolsAndTechnologiesOnDashboard");
+		cilM.VerifyToolsAndTechnologiesOnDashboard();
+		System.out.println("Completed execution of :: VerifyToolsAndTechnologiesOnDashboard");
+		System.out.println("-----------------------------------------------------------------\n");
+	
+	}
+	
+	@Test (dependsOnMethods = "VerifyToolsAndTechnologiesOnDashboard")
+	public void VerifyUpcomingEventsOnDashboard() throws InterruptedException{
+		
+		CILPageMethods cilM = new CILPageMethods(driver);
+		System.out.println("Started execution of :: VerifyUpcomingEventsOnDashboard");
+		cilM.VerifyUpcomingEventsOnDashboard();
+		System.out.println("Completed execution of :: VerifyUpcomingEventsOnDashboard");
+		System.out.println("-----------------------------------------------------------------\n");
+	
+	}
+	
+	
+	
+	@Test (dependsOnMethods = "VerifyUpcomingEventsOnDashboard")
+	public void VerifyLabVisitsOnDashboard() throws InterruptedException{
+		
+		CILPageMethods cilM = new CILPageMethods(driver);
+		System.out.println("Started execution of :: VerifyLabVisitsOnDashboard");
+		cilM.VerifyLabVisitsOnDashboard();
+		System.out.println("Completed execution of :: VerifyLabVisitsOnDashboard");
+		System.out.println("-----------------------------------------------------------------\n");
+	
+	}
+	
+	@Test (dependsOnMethods = "VerifyLabVisitsOnDashboard")
+	public void VerifyTrendingIdeasOnDashboard() throws InterruptedException{
+		
+		CILPageMethods cilM = new CILPageMethods(driver);
+		System.out.println("Started execution of :: VerifyTrendingIdeasOnDashboard");
+		cilM.VerifyTrendingIdeasOnDashboard();
+		System.out.println("Completed execution of :: VerifyTrendingIdeasOnDashboard");
+		System.out.println("-----------------------------------------------------------------\n");
+	
+	}
+	
+	@Test (dependsOnMethods = "VerifyTrendingIdeasOnDashboard")
+	public void VerifyOpinionPollSubmit() throws InterruptedException{
+		
+		CILPageMethods cilM = new CILPageMethods(driver);
+		System.out.println("Started execution of :: VerifyOpinionPollSubmit");
+		cilM.VerifyOpinionPollSubmit();
+		System.out.println("Completed execution of :: VerifyOpinionPollSubmit");
+		System.out.println("-----------------------------------------------------------------\n");
+	
+	}
+	
+	@Test (priority = 1)
+	public void VerifyLinksOnCILHomePage() throws IOException{
 		
 		CILPageMethods cilM = new CILPageMethods(driver);
 		System.out.println("Started execution of :: VerifyLinksOnCILHomePage");
@@ -71,5 +128,7 @@ public class TestCILPortal extends BaseTest {
 	
 		
 	}
+	
+	
 	
 }

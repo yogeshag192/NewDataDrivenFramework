@@ -5,8 +5,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 
 import com.common.Base;
@@ -21,7 +23,6 @@ public class CILPageMethods extends Base{
 		// TODO Auto-generated constructor stub
 	}
 
-	
 	
 	//Test Case Methods start here
 	public void VerifyLinksOnCILHomePage() throws IOException{
@@ -148,5 +149,114 @@ public class CILPageMethods extends Base{
 		
 	
 	}
+
+	
+	public void VerifyToolsAndTechnologiesOnDashboard() throws InterruptedException{
+		//Hover Mouse on each tools and technology
+		
+		BaseTest.test.log(LogStatus.INFO, "Verifying Tools and Technologies on DashBoard : ");
+		List<WebElement> toolsList = new ArrayList<WebElement>();
+		toolsList = driver.findElements(By.xpath("//div[@class = 'panel-body col-md-12 panel-bg upper-panel tech-stack-panel']/div/span"));   
+		
+		if(toolsList.isEmpty()){
+			BaseTest.test.log(LogStatus.FAIL, "There are no tools available or the referenced xpath has been changed!");
+			Assert.fail("Assertion Failed.");
+		}
+		
+		Actions action = new Actions(driver);
+		for (WebElement tool : toolsList){
+			action.moveToElement(tool).build().perform();
+			Thread.sleep(1000);
+			BaseTest.test.log(LogStatus.PASS, "Hover Successful on Tool : " +tool.getText());
+			System.out.println("Hover Successful on Tool : " +tool.getText());
+		}
+		
+		
+	}
+
+	public void VerifyUpcomingEventsOnDashboard() throws InterruptedException{
+		
+		BaseTest.test.log(LogStatus.INFO, "Verifying Upcoming Events : ");
+		List<WebElement> eventList = new ArrayList<WebElement>();
+		eventList = driver.findElements(By.xpath("//ul[@class = 'event-list list-group']/li/div/a"));
+		
+		if(eventList.isEmpty()){
+			BaseTest.test.log(LogStatus.FAIL, "There are no upcoming events available or the referenced xpath has been changed!");
+			Assert.fail("Assertion Failed.");
+		}
+		
+		//Scroll till bottom of page
+		Actions action = new Actions(driver);
+		action.keyDown(Keys.CONTROL).sendKeys(Keys.END).perform();
+		Thread.sleep(3000);
+		
+		
+		for (WebElement event : eventList){
+			action.moveToElement(event).build().perform();
+			Thread.sleep(1000);
+			BaseTest.test.log(LogStatus.PASS, "Hover Successful on Event : " +event.getText());
+			System.out.println("Hover Successful on Tool : " +event.getText());
+		}
+		
+	}
+
+	public void VerifyLabVisitsOnDashboard() throws InterruptedException{
+		
+		BaseTest.test.log(LogStatus.INFO, "Verifying Lab Visits : ");
+		List<WebElement> labVisits = new ArrayList<WebElement>();
+		labVisits = driver.findElements(By.xpath("//ul[@class = 'list-group']/li/div/span"));
+		
+		if(labVisits.isEmpty()){
+			BaseTest.test.log(LogStatus.FAIL, "There are no lab visits available or the referenced xpath has been changed!");
+			Assert.fail("Assertion Failed.");
+		}
+		
+		//Scroll till bottom of page
+		Actions action = new Actions(driver);
+		/*action.keyDown(Keys.CONTROL).sendKeys(Keys.END).perform();
+		Thread.sleep(3000);*/
+		
+		
+		for (WebElement visit : labVisits){
+			action.click(visit).build().perform();
+			Thread.sleep(1000);
+			action.click(visit).build().perform();
+			Thread.sleep(1000);
+			BaseTest.test.log(LogStatus.PASS, "Verified Lab Visit : " +visit.getText());
+			System.out.println("Verified Lab Visit : " +visit.getText());
+		}
+		
+	}
+
+
+	public void VerifyTrendingIdeasOnDashboard(){
+		BaseTest.test.log(LogStatus.INFO, "Verifying Trending Ideas : ");
+		List<WebElement> Ideas = new ArrayList<WebElement>();
+		Ideas = driver.findElements(By.xpath("//li[@id = 'trending']"));
+		
+		if(Ideas.isEmpty()){
+			BaseTest.test.log(LogStatus.FAIL, "There are no Trending Ideas available or the referenced xpath has been changed!");
+			Assert.fail("Assertion Failed.");
+		}
+		
+		for (WebElement idea : Ideas){
+			
+			BaseTest.test.log(LogStatus.PASS, "Verified Trending Idea : " +idea.getText());
+			System.out.println("Verified Lab Visit : " +idea.getText());
+		}
+		
+	}
+
+	public void VerifyOpinionPollSubmit(){
+		BaseTest.test.log(LogStatus.INFO, "Verify Available Options for Opinion Poll:");
+		//input[@type = 'radio' and @value = 'Good']
+		List<WebElement> opinionsList = new ArrayList<WebElement>();
+		opinionsList = driver.findElements(By.xpath("//div[@class = 'radio cilFont14']/label"));
+		for (WebElement opinion : opinionsList){
+			
+			BaseTest.test.log(LogStatus.PASS, opinion.getText());
+		}
+	}
+
 
 }

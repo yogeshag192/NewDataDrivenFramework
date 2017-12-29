@@ -180,7 +180,7 @@ public class BaseTest{
 		
 		String className = this.getClass().getSimpleName();
 		String methodName = method.getName();
-		String currentRunningTest = "Next Test Run:"+ "\n" +"Class Name: "+className +"\n" +"Method Name: "+methodName;
+		String currentRunningTest = "Executing Test:"+ "\n\n" +"Class Name: "+className +"\n" +"Method Name: "+methodName;
 		
 		final JOptionPane optionPane = new JOptionPane(currentRunningTest, JOptionPane.INFORMATION_MESSAGE, JOptionPane.DEFAULT_OPTION, null, new Object[]{}, null);
 
@@ -194,7 +194,7 @@ public class BaseTest{
 		dialog.pack();
 
 		//create timer to dispose of dialog after 5 seconds
-		Timer timer = new Timer(3000, new AbstractAction() {
+		Timer timer = new Timer(5000, new AbstractAction() {
 			 @Override
 			    public void actionPerformed(ActionEvent ae) {
 			        dialog.dispose();
