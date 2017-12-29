@@ -124,7 +124,7 @@ public class TestCILPortal extends BaseTest {
 		System.out.println("Started execution of :: VerifyLinksOnCILHomePage");
 		cilM.VerifyLinksOnCILHomePage();
 		System.out.println("Completed execution of :: VerifyLinksOnCILHomePage");
-		System.out.println("-----------------------------------------------------------------\n");
+		System.out.println("-------------------------------------------------------------------\n");
 	
 		
 	}
