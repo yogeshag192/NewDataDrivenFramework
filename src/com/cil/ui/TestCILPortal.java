@@ -107,7 +107,7 @@ public class TestCILPortal extends BaseTest {
 	}
 	
 	@Test (dependsOnMethods = "VerifyTrendingIdeasOnDashboard")
-	public void VerifyOpinionPollSubmit() throws InterruptedException{
+	public void VerifyOpinionPollSubmit() throws InterruptedException, IOException{
 		
 		CILPageMethods cilM = new CILPageMethods(driver);
 		System.out.println("Started execution of :: VerifyOpinionPollSubmit");

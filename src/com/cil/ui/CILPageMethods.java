@@ -247,7 +247,7 @@ public class CILPageMethods extends Base{
 		
 	}
 
-	public void VerifyOpinionPollSubmit(){
+	public void VerifyOpinionPollSubmit() throws IOException{
 		BaseTest.test.log(LogStatus.INFO, "Verify Available Options for Opinion Poll:");
 		//input[@type = 'radio' and @value = 'Good']
 		List<WebElement> opinionsList = new ArrayList<WebElement>();
@@ -255,6 +255,16 @@ public class CILPageMethods extends Base{
 		for (WebElement opinion : opinionsList){
 			
 			BaseTest.test.log(LogStatus.PASS, opinion.getText());
+		}
+		
+		for (WebElement opinion : opinionsList){
+			
+			if(opinion.getText().equalsIgnoreCase("Good")){
+				opinion.click();
+				clickElement(getElementValue("voteNowButton"));
+				BaseTest.test.log(LogStatus.PASS, "Submitted Opinion : " +opinion.getText());
+			}
+			
 		}
 	}
 

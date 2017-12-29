@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="10" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Test Suite: CIL Test Suite" duration-ms="115710" started-at="2017-12-29T10:59:10Z" finished-at="2017-12-29T11:01:05Z">
+  <suite name="Test Suite: CIL Test Suite" duration-ms="111884" started-at="2017-12-29T11:25:40Z" finished-at="2017-12-29T11:27:32Z">
     <groups>
     </groups>
-    <test name="CIL Test Cases" duration-ms="115710" started-at="2017-12-29T10:59:10Z" finished-at="2017-12-29T11:01:05Z">
+    <test name="CIL Test Cases" duration-ms="111884" started-at="2017-12-29T11:25:40Z" finished-at="2017-12-29T11:27:32Z">
       <class name="com.cil.ui.TestCILPortal">
-        <test-method status="PASS" signature="beforeSuiteExtentSetup()[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="beforeSuiteExtentSetup" is-config="true" duration-ms="396" started-at="2017-12-29T16:29:09Z" finished-at="2017-12-29T16:29:10Z">
+        <test-method status="PASS" signature="beforeSuiteExtentSetup()[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="beforeSuiteExtentSetup" is-config="true" duration-ms="216" started-at="2017-12-29T16:55:40Z" finished-at="2017-12-29T16:55:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuiteExtentSetup -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="setUp" is-config="true" duration-ms="10118" started-at="2017-12-29T16:29:10Z" finished-at="2017-12-29T16:29:20Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="setUp" is-config="true" duration-ms="7947" started-at="2017-12-29T16:55:40Z" finished-at="2017-12-29T16:55:48Z">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="beforeMethodExtentSetup" is-config="true" duration-ms="7367" started-at="2017-12-29T16:29:20Z" finished-at="2017-12-29T16:29:27Z">
+        <test-method status="PASS" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="beforeMethodExtentSetup" is-config="true" duration-ms="5544" started-at="2017-12-29T16:55:48Z" finished-at="2017-12-29T16:55:53Z">
           <params>
             <param index="0">
               <value>
@@ -33,11 +33,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodExtentSetup -->
-        <test-method status="PASS" signature="VerifyCILDashboardComponents()[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="VerifyCILDashboardComponents" duration-ms="4598" started-at="2017-12-29T16:29:27Z" finished-at="2017-12-29T16:29:32Z">
+        <test-method status="PASS" signature="VerifyCILDashboardComponents()[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="VerifyCILDashboardComponents" duration-ms="4597" started-at="2017-12-29T16:55:53Z" finished-at="2017-12-29T16:55:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCILDashboardComponents -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="getResult" is-config="true" duration-ms="3" started-at="2017-12-29T16:29:32Z" finished-at="2017-12-29T16:29:32Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="getResult" is-config="true" duration-ms="3" started-at="2017-12-29T16:55:58Z" finished-at="2017-12-29T16:55:58Z">
           <params>
             <param index="0">
               <value>
@@ -48,7 +48,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="beforeMethodExtentSetup" is-config="true" duration-ms="5025" started-at="2017-12-29T16:29:32Z" finished-at="2017-12-29T16:29:37Z">
+        <test-method status="PASS" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="beforeMethodExtentSetup" is-config="true" duration-ms="5020" started-at="2017-12-29T16:55:58Z" finished-at="2017-12-29T16:56:03Z">
           <params>
             <param index="0">
               <value>
@@ -59,11 +59,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodExtentSetup -->
-        <test-method status="PASS" signature="VerifyLinksOnCILDashboard()[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="VerifyLinksOnCILDashboard" duration-ms="193" started-at="2017-12-29T16:29:37Z" finished-at="2017-12-29T16:29:37Z">
+        <test-method status="PASS" signature="VerifyLinksOnCILDashboard()[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="VerifyLinksOnCILDashboard" duration-ms="213" started-at="2017-12-29T16:56:03Z" finished-at="2017-12-29T16:56:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyLinksOnCILDashboard -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="getResult" is-config="true" duration-ms="0" started-at="2017-12-29T16:29:37Z" finished-at="2017-12-29T16:29:37Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="getResult" is-config="true" duration-ms="0" started-at="2017-12-29T16:56:03Z" finished-at="2017-12-29T16:56:03Z">
           <params>
             <param index="0">
               <value>
@@ -74,7 +74,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="beforeMethodExtentSetup" is-config="true" duration-ms="5023" started-at="2017-12-29T16:29:37Z" finished-at="2017-12-29T16:29:42Z">
+        <test-method status="PASS" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="beforeMethodExtentSetup" is-config="true" duration-ms="5025" started-at="2017-12-29T16:56:03Z" finished-at="2017-12-29T16:56:08Z">
           <params>
             <param index="0">
               <value>
@@ -85,11 +85,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodExtentSetup -->
-        <test-method status="PASS" signature="VerifyOnGoingProjects()[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="VerifyOnGoingProjects" duration-ms="21738" started-at="2017-12-29T16:29:42Z" finished-at="2017-12-29T16:30:04Z">
+        <test-method status="PASS" signature="VerifyOnGoingProjects()[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="VerifyOnGoingProjects" duration-ms="21626" started-at="2017-12-29T16:56:08Z" finished-at="2017-12-29T16:56:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyOnGoingProjects -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="getResult" is-config="true" duration-ms="0" started-at="2017-12-29T16:30:04Z" finished-at="2017-12-29T16:30:04Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="getResult" is-config="true" duration-ms="0" started-at="2017-12-29T16:56:30Z" finished-at="2017-12-29T16:56:30Z">
           <params>
             <param index="0">
               <value>
@@ -100,7 +100,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="beforeMethodExtentSetup" is-config="true" duration-ms="5037" started-at="2017-12-29T16:30:04Z" finished-at="2017-12-29T16:30:09Z">
+        <test-method status="PASS" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="beforeMethodExtentSetup" is-config="true" duration-ms="5027" started-at="2017-12-29T16:56:30Z" finished-at="2017-12-29T16:56:35Z">
           <params>
             <param index="0">
               <value>
@@ -111,7 +111,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodExtentSetup -->
-        <test-method status="FAIL" signature="test7()[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="test7" duration-ms="3" started-at="2017-12-29T16:30:09Z" finished-at="2017-12-29T16:30:09Z">
+        <test-method status="FAIL" signature="test7()[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="test7" duration-ms="3" started-at="2017-12-29T16:56:35Z" finished-at="2017-12-29T16:56:35Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -123,7 +123,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test7 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="getResult" is-config="true" duration-ms="401" started-at="2017-12-29T16:30:09Z" finished-at="2017-12-29T16:30:09Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="getResult" is-config="true" duration-ms="361" started-at="2017-12-29T16:56:35Z" finished-at="2017-12-29T16:56:35Z">
           <params>
             <param index="0">
               <value>
@@ -134,7 +134,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="beforeMethodExtentSetup" is-config="true" duration-ms="5025" started-at="2017-12-29T16:30:09Z" finished-at="2017-12-29T16:30:14Z">
+        <test-method status="PASS" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="beforeMethodExtentSetup" is-config="true" duration-ms="5027" started-at="2017-12-29T16:56:35Z" finished-at="2017-12-29T16:56:40Z">
           <params>
             <param index="0">
               <value>
@@ -145,11 +145,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodExtentSetup -->
-        <test-method status="PASS" signature="VerifyToolsAndTechnologiesOnDashboard()[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="VerifyToolsAndTechnologiesOnDashboard" duration-ms="5529" started-at="2017-12-29T16:30:14Z" depends-on-methods="com.cil.ui.TestCILPortal.VerifyOnGoingProjects" finished-at="2017-12-29T16:30:20Z">
+        <test-method status="PASS" signature="VerifyToolsAndTechnologiesOnDashboard()[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="VerifyToolsAndTechnologiesOnDashboard" duration-ms="5551" started-at="2017-12-29T16:56:40Z" depends-on-methods="com.cil.ui.TestCILPortal.VerifyOnGoingProjects" finished-at="2017-12-29T16:56:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyToolsAndTechnologiesOnDashboard -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="getResult" is-config="true" duration-ms="0" started-at="2017-12-29T16:30:20Z" finished-at="2017-12-29T16:30:20Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="getResult" is-config="true" duration-ms="1" started-at="2017-12-29T16:56:46Z" finished-at="2017-12-29T16:56:46Z">
           <params>
             <param index="0">
               <value>
@@ -160,7 +160,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="beforeMethodExtentSetup" is-config="true" duration-ms="5062" started-at="2017-12-29T16:30:20Z" finished-at="2017-12-29T16:30:25Z">
+        <test-method status="PASS" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="beforeMethodExtentSetup" is-config="true" duration-ms="5077" started-at="2017-12-29T16:56:46Z" finished-at="2017-12-29T16:56:51Z">
           <params>
             <param index="0">
               <value>
@@ -171,11 +171,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodExtentSetup -->
-        <test-method status="PASS" signature="VerifyUpcomingEventsOnDashboard()[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="VerifyUpcomingEventsOnDashboard" duration-ms="6344" started-at="2017-12-29T16:30:25Z" depends-on-methods="com.cil.ui.TestCILPortal.VerifyToolsAndTechnologiesOnDashboard" finished-at="2017-12-29T16:30:31Z">
+        <test-method status="PASS" signature="VerifyUpcomingEventsOnDashboard()[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="VerifyUpcomingEventsOnDashboard" duration-ms="6311" started-at="2017-12-29T16:56:51Z" depends-on-methods="com.cil.ui.TestCILPortal.VerifyToolsAndTechnologiesOnDashboard" finished-at="2017-12-29T16:56:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyUpcomingEventsOnDashboard -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="getResult" is-config="true" duration-ms="1" started-at="2017-12-29T16:30:31Z" finished-at="2017-12-29T16:30:31Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="getResult" is-config="true" duration-ms="1" started-at="2017-12-29T16:56:57Z" finished-at="2017-12-29T16:56:57Z">
           <params>
             <param index="0">
               <value>
@@ -186,7 +186,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="beforeMethodExtentSetup" is-config="true" duration-ms="5019" started-at="2017-12-29T16:30:31Z" finished-at="2017-12-29T16:30:36Z">
+        <test-method status="PASS" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="beforeMethodExtentSetup" is-config="true" duration-ms="5023" started-at="2017-12-29T16:56:57Z" finished-at="2017-12-29T16:57:02Z">
           <params>
             <param index="0">
               <value>
@@ -197,11 +197,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodExtentSetup -->
-        <test-method status="PASS" signature="VerifyLabVisitsOnDashboard()[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="VerifyLabVisitsOnDashboard" duration-ms="8732" started-at="2017-12-29T16:30:36Z" depends-on-methods="com.cil.ui.TestCILPortal.VerifyUpcomingEventsOnDashboard" finished-at="2017-12-29T16:30:45Z">
+        <test-method status="PASS" signature="VerifyLabVisitsOnDashboard()[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="VerifyLabVisitsOnDashboard" duration-ms="8658" started-at="2017-12-29T16:57:02Z" depends-on-methods="com.cil.ui.TestCILPortal.VerifyUpcomingEventsOnDashboard" finished-at="2017-12-29T16:57:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyLabVisitsOnDashboard -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="getResult" is-config="true" duration-ms="0" started-at="2017-12-29T16:30:45Z" finished-at="2017-12-29T16:30:45Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="getResult" is-config="true" duration-ms="0" started-at="2017-12-29T16:57:11Z" finished-at="2017-12-29T16:57:11Z">
           <params>
             <param index="0">
               <value>
@@ -212,7 +212,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="beforeMethodExtentSetup" is-config="true" duration-ms="5030" started-at="2017-12-29T16:30:45Z" finished-at="2017-12-29T16:30:50Z">
+        <test-method status="PASS" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="beforeMethodExtentSetup" is-config="true" duration-ms="5024" started-at="2017-12-29T16:57:11Z" finished-at="2017-12-29T16:57:16Z">
           <params>
             <param index="0">
               <value>
@@ -223,11 +223,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodExtentSetup -->
-        <test-method status="PASS" signature="VerifyTrendingIdeasOnDashboard()[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="VerifyTrendingIdeasOnDashboard" duration-ms="164" started-at="2017-12-29T16:30:50Z" depends-on-methods="com.cil.ui.TestCILPortal.VerifyLabVisitsOnDashboard" finished-at="2017-12-29T16:30:50Z">
+        <test-method status="PASS" signature="VerifyTrendingIdeasOnDashboard()[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="VerifyTrendingIdeasOnDashboard" duration-ms="167" started-at="2017-12-29T16:57:16Z" depends-on-methods="com.cil.ui.TestCILPortal.VerifyLabVisitsOnDashboard" finished-at="2017-12-29T16:57:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyTrendingIdeasOnDashboard -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="getResult" is-config="true" duration-ms="0" started-at="2017-12-29T16:30:50Z" finished-at="2017-12-29T16:30:50Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="getResult" is-config="true" duration-ms="1" started-at="2017-12-29T16:57:16Z" finished-at="2017-12-29T16:57:16Z">
           <params>
             <param index="0">
               <value>
@@ -238,22 +238,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="beforeMethodExtentSetup" is-config="true" duration-ms="5028" started-at="2017-12-29T16:30:50Z" finished-at="2017-12-29T16:30:55Z">
+        <test-method status="PASS" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="beforeMethodExtentSetup" is-config="true" duration-ms="5022" started-at="2017-12-29T16:57:16Z" finished-at="2017-12-29T16:57:21Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.cil.ui.TestCILPortal.VerifyOpinionPollSubmit() throws java.lang.InterruptedException]]>
+                <![CDATA[public void com.cil.ui.TestCILPortal.VerifyOpinionPollSubmit() throws java.lang.InterruptedException,java.io.IOException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodExtentSetup -->
-        <test-method status="PASS" signature="VerifyOpinionPollSubmit()[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="VerifyOpinionPollSubmit" duration-ms="144" started-at="2017-12-29T16:30:55Z" depends-on-methods="com.cil.ui.TestCILPortal.VerifyTrendingIdeasOnDashboard" finished-at="2017-12-29T16:30:55Z">
+        <test-method status="PASS" signature="VerifyOpinionPollSubmit()[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="VerifyOpinionPollSubmit" duration-ms="487" started-at="2017-12-29T16:57:21Z" depends-on-methods="com.cil.ui.TestCILPortal.VerifyTrendingIdeasOnDashboard" finished-at="2017-12-29T16:57:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyOpinionPollSubmit -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="getResult" is-config="true" duration-ms="0" started-at="2017-12-29T16:30:55Z" finished-at="2017-12-29T16:30:55Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="getResult" is-config="true" duration-ms="0" started-at="2017-12-29T16:57:22Z" finished-at="2017-12-29T16:57:22Z">
           <params>
             <param index="0">
               <value>
@@ -264,7 +264,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="beforeMethodExtentSetup" is-config="true" duration-ms="5026" started-at="2017-12-29T16:30:55Z" finished-at="2017-12-29T16:31:00Z">
+        <test-method status="PASS" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="beforeMethodExtentSetup" is-config="true" duration-ms="5024" started-at="2017-12-29T16:57:22Z" finished-at="2017-12-29T16:57:27Z">
           <params>
             <param index="0">
               <value>
@@ -275,11 +275,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodExtentSetup -->
-        <test-method status="PASS" signature="VerifyLinksOnCILHomePage()[pri:1, instance:com.cil.ui.TestCILPortal@569cfc36]" name="VerifyLinksOnCILHomePage" duration-ms="4995" started-at="2017-12-29T16:31:00Z" finished-at="2017-12-29T16:31:05Z">
+        <test-method status="PASS" signature="VerifyLinksOnCILHomePage()[pri:1, instance:com.cil.ui.TestCILPortal@569cfc36]" name="VerifyLinksOnCILHomePage" duration-ms="4987" started-at="2017-12-29T16:57:27Z" finished-at="2017-12-29T16:57:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyLinksOnCILHomePage -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="getResult" is-config="true" duration-ms="0" started-at="2017-12-29T16:31:05Z" finished-at="2017-12-29T16:31:05Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="getResult" is-config="true" duration-ms="0" started-at="2017-12-29T16:57:32Z" finished-at="2017-12-29T16:57:32Z">
           <params>
             <param index="0">
               <value>
@@ -290,11 +290,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="tearDown" is-config="true" duration-ms="43" started-at="2017-12-29T16:31:05Z" finished-at="2017-12-29T16:31:05Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="tearDown" is-config="true" duration-ms="96" started-at="2017-12-29T16:57:32Z" finished-at="2017-12-29T16:57:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="endReport" is-config="true" duration-ms="519" started-at="2017-12-29T16:31:05Z" finished-at="2017-12-29T16:31:06Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.cil.ui.TestCILPortal@569cfc36]" name="endReport" is-config="true" duration-ms="399" started-at="2017-12-29T16:57:32Z" finished-at="2017-12-29T16:57:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
