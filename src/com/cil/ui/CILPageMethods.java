@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -25,7 +26,7 @@ public class CILPageMethods extends Base{
 
 	
 	//Test Case Methods start here
-	public void VerifyLinksOnCILHomePage() throws IOException{
+	public void VerifyLinksOnCILHomePage() throws IOException, InterruptedException{
 		// Verify Links on the page
 		System.out.println("\n" +"-----Verifying Links on the Home Page..");
 		
@@ -42,6 +43,16 @@ public class CILPageMethods extends Base{
 		}
 		for(WebElement linkElement : links){
 			Assert.assertTrue(isElementPresentAndDisplayed(linkElement), "Assert Failed!");
+			String text = linkElement.getText();
+		
+			System.out.println("Link Element text : " +linkElement.getText());
+			
+			if(!(text.equalsIgnoreCase("LOGIN")))
+			{
+			  linkElement.click();
+			  Thread.sleep(2000);
+			}
+
 			System.out.println("Link Verified : " +linkElement.getText());
 			BaseTest.test.log(LogStatus.PASS,  linkElement.getText() +" : Link is verified");
 		}
@@ -269,4 +280,35 @@ public class CILPageMethods extends Base{
 	}
 
 
+	
+	
+	public void VerifySignUpFunctionalityOnCILTest() throws IOException, InterruptedException{
+
+		//clickElement(getElementValue("signUpLink"));
+		waitForPageToLoad("20");
+			clickElement(getElementValue("userNameTextBox"));
+			type(getElementValue("userNameTextBox"), "AutoTestUser" +System.currentTimeMillis());
+			type(getElementValue("passwordTextBox"), "Test@123");
+			type(getElementValue("firstName"), "Robot");
+			type(getElementValue("lastName"), "Auto");
+			type(getElementValue("phoneNo"), "1234567890");
+			type(getElementValue("email"), "agrawaly@hcl.com");
+			Thread.sleep(2000);
+			clickElement(getElementValue("signUpButton"));
+			Thread.sleep(3000);
+		
+		Alert alert = driver.switchTo().alert();
+		System.out.println("Alert1 Message: " +alert.getText());
+		alert.accept();
+		Thread.sleep(2000);
+		
+		alert = driver.switchTo().alert();
+		System.out.println("Alert2 Message: " +alert.getText());
+		alert.accept();
+		Thread.sleep(2000);
+		
+		
+		
+		
+	}
 }

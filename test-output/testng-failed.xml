@@ -4,17 +4,18 @@
   <test name="CIL Test Cases(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="com.cil.ui.TestCILPortal">
+      <class name="com.cil.ui.CILTestSuite">
         <methods>
+          <include name="VerifySignUpFunctionalityOnCILTest"/>
           <include name="setUp"/>
           <include name="endReport"/>
+          <include name="VerifyLinksOnCILHomePage"/>
           <include name="tearDown"/>
-          <include name="test7"/>
           <include name="beforeSuiteExtentSetup"/>
           <include name="beforeMethodExtentSetup"/>
           <include name="getResult"/>
         </methods>
-      </class> <!-- com.cil.ui.TestCILPortal -->
+      </class> <!-- com.cil.ui.CILTestSuite -->
     </classes>
   </test> <!-- CIL Test Cases(failed) -->
 </suite> <!-- Failed suite [Test Suite: CIL Test Suite] -->

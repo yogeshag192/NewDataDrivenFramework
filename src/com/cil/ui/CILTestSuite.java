@@ -10,7 +10,7 @@ import com.common.Base;
 import com.common.BaseTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class TestCILPortal extends BaseTest {
+public class CILTestSuite extends BaseTest {
 	
 	
 	@Test
@@ -118,12 +118,24 @@ public class TestCILPortal extends BaseTest {
 	}
 	
 	@Test (priority = 1)
-	public void VerifyLinksOnCILHomePage() throws IOException{
+	public void VerifyLinksOnCILHomePage() throws IOException, InterruptedException{
 		
 		CILPageMethods cilM = new CILPageMethods(driver);
 		System.out.println("Started execution of :: VerifyLinksOnCILHomePage");
 		cilM.VerifyLinksOnCILHomePage();
 		System.out.println("Completed execution of :: VerifyLinksOnCILHomePage");
+		System.out.println("-------------------------------------------------------------------\n");
+	
+		
+	}
+	
+	@Test (priority = 2)
+	public void VerifySignUpFunctionalityOnCILTest() throws IOException, InterruptedException{
+		
+		CILPageMethods cilM = new CILPageMethods(driver);
+		System.out.println("Started execution of :: VerifySignUpFunctionalityOnCILTest");
+		cilM.VerifySignUpFunctionalityOnCILTest();
+		System.out.println("Completed execution of :: VerifySignUpFunctionalityOnCILTest");
 		System.out.println("-------------------------------------------------------------------\n");
 	
 		

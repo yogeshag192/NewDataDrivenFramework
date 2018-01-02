@@ -3,11 +3,16 @@
 
 <suite name="Test Suite: CIL Test Suite" parallel="none">
 
-   <test name="CIL Test Cases">
-   	<parameter name="browser" value="Chrome" ></parameter>
-      <classes>
-      	<class name="com.cil.ui.TestCILPortal"/>
-       </classes>
-       
-   </test>
+	<test name="CIL Test Cases">
+		<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class name="com.cil.ui.CILTestSuite">
+				<methods>
+					<include name="VerifyLinksOnCILHomePage"></include>
+					<include name="VerifySignUpFunctionalityOnCILTest" />
+				</methods>
+			</class>
+		</classes>
+
+	</test>
 </suite>
