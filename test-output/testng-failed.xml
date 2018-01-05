@@ -9,7 +9,6 @@
           <include name="VerifySignUpFunctionalityOnCILTest"/>
           <include name="setUp"/>
           <include name="endReport"/>
-          <include name="VerifyLinksOnCILHomePage"/>
           <include name="tearDown"/>
           <include name="beforeSuiteExtentSetup"/>
           <include name="beforeMethodExtentSetup"/>

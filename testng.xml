@@ -7,12 +7,12 @@
 		<parameter name="browser" value="Chrome"></parameter>
 		<classes>
 			<class name="com.cil.ui.CILTestSuite">
-				<methods>
+			<methods>
 					<include name="VerifyLinksOnCILHomePage"></include>
 					<include name="VerifySignUpFunctionalityOnCILTest" />
 				</methods>
 			</class>
 		</classes>
-
 	</test>
+
 </suite>

@@ -47,7 +47,7 @@ public class CILPageMethods extends Base{
 		
 			System.out.println("Link Element text : " +linkElement.getText());
 			
-			if(!(text.equalsIgnoreCase("LOGIN")))
+			if((text.equalsIgnoreCase("ABOUT"))||(text.equalsIgnoreCase("OFFERINGS"))||(text.equalsIgnoreCase("OFFERINGS")))
 			{
 			  linkElement.click();
 			  Thread.sleep(2000);
@@ -285,9 +285,9 @@ public class CILPageMethods extends Base{
 	public void VerifySignUpFunctionalityOnCILTest() throws IOException, InterruptedException{
 
 		//clickElement(getElementValue("signUpLink"));
-		waitForPageToLoad("20");
-			clickElement(getElementValue("userNameTextBox"));
-			type(getElementValue("userNameTextBox"), "AutoTestUser" +System.currentTimeMillis());
+			//clickElement(getElementValue("userNameTextBox"));
+			type(getElementValue("userNameTextBox"), "AutoTestUser");
+			Thread.sleep(3000);
 			type(getElementValue("passwordTextBox"), "Test@123");
 			type(getElementValue("firstName"), "Robot");
 			type(getElementValue("lastName"), "Auto");
@@ -306,6 +306,7 @@ public class CILPageMethods extends Base{
 		System.out.println("Alert2 Message: " +alert.getText());
 		alert.accept();
 		Thread.sleep(2000);
+		
 		
 		
 		

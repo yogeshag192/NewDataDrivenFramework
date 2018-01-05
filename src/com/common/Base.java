@@ -26,6 +26,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 //import org.openqa.selenium.server.browserlaunchers.Sleeper;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -128,11 +129,11 @@ public class Base {
 	
 	public void type(String locator, String text) throws InterruptedException{
 		By by = parseLocator(locator);
+
 		WebElement ele = driver.findElement(by);
 		ele.click();
-		//Thread.sleep(1000);
+		Thread.sleep(1000);
 		ele.sendKeys(text);
-		//Thread.sleep(1000);
 	}
 	
 	public void waitForElementToBeVisible(String locator){

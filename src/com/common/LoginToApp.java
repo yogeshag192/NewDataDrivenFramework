@@ -31,7 +31,7 @@ public class LoginToApp extends Base {
              System.out.println("Logged in Successfully to : " +appUrl );
             break;
             
-        case "":
+        case "BLOCKCHAIN":
             
             break; 
             
