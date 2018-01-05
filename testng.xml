@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Test Suite: CIL Test Suite" parallel="none">
+<suite name="Test Suite: CIL Test Suite" parallel="classes" thread-count="3">
 
-	<test name="CIL Test Cases">
+	<test name="CIL Test Cases1">
 		<parameter name="browser" value="Chrome"></parameter>
 		<classes>
-			<class name="com.cil.ui.CILTestSuite">
-			<methods>
-					<include name="VerifyLinksOnCILHomePage"></include>
-					<include name="VerifySignUpFunctionalityOnCILTest" />
-				</methods>
-			</class>
+			<class name="com.cil.ui.CILTestSuite"/>
+			<class name="com.cil.ui.CILTestSuite2"/>
 		</classes>
 	</test>
-
+	
+	<!-- <test name="CIL Test Cases2">
+		<parameter name="browser" value="Firefox"></parameter>
+		<classes>
+			<class name="com.cil.ui.CILTestSuite2"/>
+		</classes>
+	</test> -->
 </suite>

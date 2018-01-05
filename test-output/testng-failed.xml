@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Test Suite: CIL Test Suite]">
-  <test name="CIL Test Cases(failed)">
+  <test name="CIL Test Cases1(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
       <class name="com.cil.ui.CILTestSuite">
         <methods>
-          <include name="VerifySignUpFunctionalityOnCILTest"/>
           <include name="setUp"/>
+          <include name="test7"/>
           <include name="endReport"/>
           <include name="tearDown"/>
           <include name="beforeSuiteExtentSetup"/>
@@ -16,5 +16,5 @@
         </methods>
       </class> <!-- com.cil.ui.CILTestSuite -->
     </classes>
-  </test> <!-- CIL Test Cases(failed) -->
+  </test> <!-- CIL Test Cases1(failed) -->
 </suite> <!-- Failed suite [Test Suite: CIL Test Suite] -->
