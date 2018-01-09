@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Test Suite: CIL Test Suite" parallel="classes" thread-count="3">
+<suite name="Test Suite: CIL Test Suite" parallel="classes" thread-count="2">
 
-	<test name="CIL Test Cases1">
+	<test name="CIL Test Cases">
 		<parameter name="browser" value="Chrome"></parameter>
 		<classes>
 			<class name="com.cil.ui.CILTestSuite"/>

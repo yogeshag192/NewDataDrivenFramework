@@ -36,7 +36,7 @@ public class CILTestSuite extends BaseTest {
 	}
 	
 	
-	@Test
+	//@Test
 	public void test7(){
 	
 		CILPageMethods cilM = new CILPageMethods(driver);
