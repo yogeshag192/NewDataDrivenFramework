@@ -7,7 +7,6 @@
 		<parameter name="browser" value="Chrome"></parameter>
 		<classes>
 			<class name="com.cil.ui.CILTestSuite"/>
-			<class name="com.cil.ui.CILTestSuite2"/>
 		</classes>
 	</test>
 	
