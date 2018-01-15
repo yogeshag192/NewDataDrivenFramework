@@ -60,7 +60,7 @@ public class BaseTest{
 	
 	@BeforeMethod
 	public void beforeMethodExtentSetup(Method method){
-		System.out.println("In BeforeMethodSetup Method..");
+		System.out.println("Setting up method config..");
 		test = extent.startTest(("Class: " +this.getClass().getSimpleName() + " :: " +method.getName()), method.getName());
 		test.assignAuthor("Author : Yogesh").assignCategory("Smoke Tests");
 		
