@@ -16,7 +16,7 @@ public class CILTestSuite extends BaseTest {
 	@Test
 	public void VerifyCILDashboardComponents() throws InterruptedException
 	{
-		System.out.println("\n-------------------- IN CIL - DASHBOARD TESTCASES ---------------------------");
+		System.out.println("\n-------------------- IN CIL - DASHBOARD TESTCASES ----------------------------");
 		CILPageMethods cilM = new CILPageMethods(driver);
 		System.out.println("Started execution of :: VerifyCILDashboardComponents");
 		cilM.VerifyCILDashboardComponents();
