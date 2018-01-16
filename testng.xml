@@ -4,7 +4,7 @@
 <suite name="Test Suite: CIL Test Suite" parallel="none">
 
 	<test name="CIL Test Cases">
-		<parameter name="browser" value="Firefox"></parameter>
+		<parameter name="browser" value="Chrome"></parameter>
 		<classes>
 			<class name="com.cil.ui.CILTestSuite"/>
 			</classes>
