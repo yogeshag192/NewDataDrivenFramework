@@ -33,11 +33,6 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
-import com.way2AutomationComponents.DragAndDropControls;
-
 public class BaseTest{
 
 	protected static WebDriver driver;
@@ -45,25 +40,14 @@ public class BaseTest{
 	protected Properties appProperties;
 	protected Properties configProperties;
 	
-	public static ExtentReports extent;
-	public static ExtentTest test;
-	
 	@BeforeSuite
-	public void beforeSuiteExtentSetup(){
-		System.out.println("Setting up extent report config..");
-		extent = new ExtentReports(System.getProperty("user.dir")+ "/extent-output/ExtentExecutionReport.html",true);
-		extent.addSystemInfo("HostName", "Yogesh")
-		.addSystemInfo("Environment", "QA")
-		.addSystemInfo("User Name", " Yogesh Agrawal");
-		extent.loadConfig(new File(System.getProperty("user.dir")+ "/extent-config.xml"));
+	public void beforeSuiteSetup(){
+		System.out.println("Before Suite Setup..");
 	}
 	
 	@BeforeMethod
 	public void beforeMethodExtentSetup(Method method){
-		System.out.println("Setting up method config..");
-		test = extent.startTest(("Class: " +this.getClass().getSimpleName() + " :: " +method.getName()), method.getName());
-		test.assignAuthor("Author : Yogesh").assignCategory("Smoke Tests");
-		
+		System.out.println("Setting up Joption Pane config..");
 		//for JOptionPane Display Popup
 		JOptionDialogue(method);
 		
@@ -75,17 +59,17 @@ public class BaseTest{
 	        if(result.getStatus() == ITestResult.FAILURE)
 	        {
 	            String screenShotPath = GetScreenShot.capture(driver, "Screenshot-"+System.currentTimeMillis());
-	            test.log(LogStatus.FAIL, result.getThrowable());
+	            System.out.println("Error Screenshot stored at: " +screenShotPath);
+	            /*test.log(LogStatus.FAIL, result.getThrowable());
 	            test.log(LogStatus.FAIL, "Snapshot of failed test below: " + test.addScreenCapture(screenShotPath));
-	        }
-	        extent.endTest(test);
+	        */}
+	  /*      extent.endTest(test);*/
 	    }
 	
 	@AfterSuite
-	public void endReport(){
-		extent.flush();
+	public void endDriverSession(){
 		
-		//extent.close();
+		driver.close();
 		
 	}
 	

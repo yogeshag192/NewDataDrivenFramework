@@ -1,347 +1,347 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="2" total="13" passed="10">
+<testng-results skipped="8" failed="0" ignored="0" total="8" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Test Suite: CIL Test Suite" duration-ms="158915" started-at="2018-01-05T11:04:20Z" finished-at="2018-01-05T11:06:59Z">
+  <suite name="Test Suite: CIL Test Suite" duration-ms="3087" started-at="2018-03-03T06:52:33Z" finished-at="2018-03-03T06:52:36Z">
     <groups>
     </groups>
-    <test name="CIL Test Cases1" duration-ms="158915" started-at="2018-01-05T11:04:20Z" finished-at="2018-01-05T11:06:59Z">
+    <test name="CIL Test Cases" duration-ms="3087" started-at="2018-03-03T06:52:33Z" finished-at="2018-03-03T06:52:36Z">
       <class name="com.cil.ui.CILTestSuite">
-        <test-method status="PASS" signature="beforeSuiteExtentSetup()[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a]" name="beforeSuiteExtentSetup" is-config="true" duration-ms="230" started-at="2018-01-05T16:34:20Z" finished-at="2018-01-05T16:34:20Z">
+        <test-method status="PASS" signature="beforeSuiteExtentSetup()[pri:0, instance:com.cil.ui.CILTestSuite@42d80b78]" name="beforeSuiteExtentSetup" is-config="true" duration-ms="175" started-at="2018-03-03T12:22:33Z" finished-at="2018-03-03T12:22:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuiteExtentSetup -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a]" name="setUp" is-config="true" duration-ms="10054" started-at="2018-01-05T16:34:20Z" finished-at="2018-01-05T16:34:30Z">
+        <test-method status="FAIL" signature="setUp(java.lang.String)[pri:0, instance:com.cil.ui.CILTestSuite@42d80b78]" name="setUp" is-config="true" duration-ms="2985" started-at="2018-03-03T12:22:33Z" finished-at="2018-03-03T12:22:36Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Chrome]]>
+                <![CDATA[Firefox]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.common.LoginToApp.loginToApplication(LoginToApp.java:24)
+	at com.common.BaseTest.setUp(BaseTest.java:114)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a]" name="beforeMethodExtentSetup" is-config="true" duration-ms="5398" started-at="2018-01-05T16:34:30Z" finished-at="2018-01-05T16:34:35Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.cil.ui.CILTestSuite.VerifyCILDashboardComponents() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.CILTestSuite@42d80b78]" name="beforeMethodExtentSetup" is-config="true" duration-ms="0" started-at="2018-03-03T12:22:36Z" finished-at="2018-03-03T12:22:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodExtentSetup -->
-        <test-method status="PASS" signature="VerifyCILDashboardComponents()[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a]" name="VerifyCILDashboardComponents" duration-ms="4560" started-at="2018-01-05T16:34:35Z" finished-at="2018-01-05T16:34:40Z">
+        <test-method status="SKIP" signature="VerifyCILDashboardComponents()[pri:0, instance:com.cil.ui.CILTestSuite@42d80b78]" name="VerifyCILDashboardComponents" duration-ms="0" started-at="2018-03-03T12:22:36Z" finished-at="2018-03-03T12:22:36Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.common.LoginToApp.loginToApplication(LoginToApp.java:24)
+	at com.common.BaseTest.setUp(BaseTest.java:114)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCILDashboardComponents -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a]" name="getResult" is-config="true" duration-ms="3" started-at="2018-01-05T16:34:40Z" finished-at="2018-01-05T16:34:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=VerifyCILDashboardComponents status=SUCCESS method=CILTestSuite.VerifyCILDashboardComponents()[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a]" name="beforeMethodExtentSetup" is-config="true" duration-ms="5026" started-at="2018-01-05T16:34:40Z" finished-at="2018-01-05T16:34:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.cil.ui.CILTestSuite.VerifyLinksOnCILDashboard() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.CILTestSuite@42d80b78]" name="beforeMethodExtentSetup" is-config="true" duration-ms="0" started-at="2018-03-03T12:22:36Z" finished-at="2018-03-03T12:22:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodExtentSetup -->
-        <test-method status="PASS" signature="VerifyLinksOnCILDashboard()[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a]" name="VerifyLinksOnCILDashboard" duration-ms="192" started-at="2018-01-05T16:34:45Z" finished-at="2018-01-05T16:34:45Z">
+        <test-method status="SKIP" signature="VerifyLinksOnCILDashboard()[pri:0, instance:com.cil.ui.CILTestSuite@42d80b78]" name="VerifyLinksOnCILDashboard" duration-ms="0" started-at="2018-03-03T12:22:36Z" finished-at="2018-03-03T12:22:36Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.common.LoginToApp.loginToApplication(LoginToApp.java:24)
+	at com.common.BaseTest.setUp(BaseTest.java:114)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyLinksOnCILDashboard -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a]" name="getResult" is-config="true" duration-ms="0" started-at="2018-01-05T16:34:45Z" finished-at="2018-01-05T16:34:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=VerifyLinksOnCILDashboard status=SUCCESS method=CILTestSuite.VerifyLinksOnCILDashboard()[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a]" name="beforeMethodExtentSetup" is-config="true" duration-ms="5032" started-at="2018-01-05T16:34:45Z" finished-at="2018-01-05T16:34:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.cil.ui.CILTestSuite.VerifyOnGoingProjects() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.CILTestSuite@42d80b78]" name="beforeMethodExtentSetup" is-config="true" duration-ms="0" started-at="2018-03-03T12:22:36Z" finished-at="2018-03-03T12:22:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodExtentSetup -->
-        <test-method status="PASS" signature="VerifyOnGoingProjects()[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a]" name="VerifyOnGoingProjects" duration-ms="21735" started-at="2018-01-05T16:34:50Z" finished-at="2018-01-05T16:35:12Z">
+        <test-method status="SKIP" signature="VerifyOnGoingProjects()[pri:0, instance:com.cil.ui.CILTestSuite@42d80b78]" name="VerifyOnGoingProjects" duration-ms="0" started-at="2018-03-03T12:22:36Z" finished-at="2018-03-03T12:22:36Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.common.LoginToApp.loginToApplication(LoginToApp.java:24)
+	at com.common.BaseTest.setUp(BaseTest.java:114)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyOnGoingProjects -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a]" name="getResult" is-config="true" duration-ms="0" started-at="2018-01-05T16:35:12Z" finished-at="2018-01-05T16:35:12Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=VerifyOnGoingProjects status=SUCCESS method=CILTestSuite.VerifyOnGoingProjects()[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a]" name="beforeMethodExtentSetup" is-config="true" duration-ms="5020" started-at="2018-01-05T16:35:12Z" finished-at="2018-01-05T16:35:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.cil.ui.CILTestSuite.test7()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethodExtentSetup -->
-        <test-method status="FAIL" signature="test7()[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a]" name="test7" duration-ms="4" started-at="2018-01-05T16:35:17Z" finished-at="2018-01-05T16:35:17Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="SKIP" signature="VerifyToolsAndTechnologiesOnDashboard()[pri:0, instance:com.cil.ui.CILTestSuite@42d80b78]" name="VerifyToolsAndTechnologiesOnDashboard" duration-ms="0" started-at="2018-03-03T12:22:36Z" depends-on-methods="com.cil.ui.CILTestSuite.VerifyOnGoingProjects" finished-at="2018-03-03T12:22:36Z">
+          <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[Method CILTestSuite.VerifyToolsAndTechnologiesOnDashboard()[pri:0, instance:com.cil.ui.CILTestSuite@42d80b78] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertTrue(Assert.java:44)at org.testng.Assert.assertTrue(Assert.java:54)at com.cil.ui.CILPageMethods.VerifyTest7(CILPageMethods.java:116)at com.cil.ui.CILTestSuite.test7(CILTestSuite.java:44)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+              <![CDATA[java.lang.Throwable: Method CILTestSuite.VerifyToolsAndTechnologiesOnDashboard()[pri:0, instance:com.cil.ui.CILTestSuite@42d80b78] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test7 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a]" name="getResult" is-config="true" duration-ms="372" started-at="2018-01-05T16:35:17Z" finished-at="2018-01-05T16:35:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=test7 status=FAILURE method=CILTestSuite.test7()[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a]" name="beforeMethodExtentSetup" is-config="true" duration-ms="5023" started-at="2018-01-05T16:35:17Z" finished-at="2018-01-05T16:35:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.cil.ui.CILTestSuite.VerifyToolsAndTechnologiesOnDashboard() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethodExtentSetup -->
-        <test-method status="PASS" signature="VerifyToolsAndTechnologiesOnDashboard()[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a]" name="VerifyToolsAndTechnologiesOnDashboard" duration-ms="5521" started-at="2018-01-05T16:35:22Z" depends-on-methods="com.cil.ui.CILTestSuite.VerifyOnGoingProjects" finished-at="2018-01-05T16:35:28Z">
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyToolsAndTechnologiesOnDashboard -->
-        <test-method status="PASS" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a]" name="beforeMethodExtentSetup" is-config="true" duration-ms="5037" started-at="2018-01-05T16:35:28Z" finished-at="2018-01-05T16:35:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.cil.ui.CILTestSuite.VerifyUpcomingEventsOnDashboard() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethodExtentSetup -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a]" name="getResult" is-config="true" duration-ms="0" started-at="2018-01-05T16:35:28Z" finished-at="2018-01-05T16:35:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=VerifyToolsAndTechnologiesOnDashboard status=SUCCESS method=CILTestSuite.VerifyToolsAndTechnologiesOnDashboard()[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="VerifyUpcomingEventsOnDashboard()[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a]" name="VerifyUpcomingEventsOnDashboard" duration-ms="6370" started-at="2018-01-05T16:35:33Z" depends-on-methods="com.cil.ui.CILTestSuite.VerifyToolsAndTechnologiesOnDashboard" finished-at="2018-01-05T16:35:39Z">
+        <test-method status="SKIP" signature="VerifyUpcomingEventsOnDashboard()[pri:0, instance:com.cil.ui.CILTestSuite@42d80b78]" name="VerifyUpcomingEventsOnDashboard" duration-ms="0" started-at="2018-03-03T12:22:36Z" depends-on-methods="com.cil.ui.CILTestSuite.VerifyToolsAndTechnologiesOnDashboard" finished-at="2018-03-03T12:22:36Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CILTestSuite.VerifyUpcomingEventsOnDashboard()[pri:0, instance:com.cil.ui.CILTestSuite@42d80b78] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CILTestSuite.VerifyUpcomingEventsOnDashboard()[pri:0, instance:com.cil.ui.CILTestSuite@42d80b78] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyUpcomingEventsOnDashboard -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a]" name="getResult" is-config="true" duration-ms="1" started-at="2018-01-05T16:35:39Z" finished-at="2018-01-05T16:35:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=VerifyUpcomingEventsOnDashboard status=SUCCESS method=CILTestSuite.VerifyUpcomingEventsOnDashboard()[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a]" name="beforeMethodExtentSetup" is-config="true" duration-ms="5036" started-at="2018-01-05T16:35:39Z" finished-at="2018-01-05T16:35:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.cil.ui.CILTestSuite.VerifyLabVisitsOnDashboard() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethodExtentSetup -->
-        <test-method status="PASS" signature="VerifyLabVisitsOnDashboard()[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a]" name="VerifyLabVisitsOnDashboard" duration-ms="8664" started-at="2018-01-05T16:35:44Z" depends-on-methods="com.cil.ui.CILTestSuite.VerifyUpcomingEventsOnDashboard" finished-at="2018-01-05T16:35:53Z">
+        <test-method status="SKIP" signature="VerifyLabVisitsOnDashboard()[pri:0, instance:com.cil.ui.CILTestSuite@42d80b78]" name="VerifyLabVisitsOnDashboard" duration-ms="0" started-at="2018-03-03T12:22:36Z" depends-on-methods="com.cil.ui.CILTestSuite.VerifyUpcomingEventsOnDashboard" finished-at="2018-03-03T12:22:36Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CILTestSuite.VerifyLabVisitsOnDashboard()[pri:0, instance:com.cil.ui.CILTestSuite@42d80b78] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CILTestSuite.VerifyLabVisitsOnDashboard()[pri:0, instance:com.cil.ui.CILTestSuite@42d80b78] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyLabVisitsOnDashboard -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a]" name="getResult" is-config="true" duration-ms="1" started-at="2018-01-05T16:35:53Z" finished-at="2018-01-05T16:35:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=VerifyLabVisitsOnDashboard status=SUCCESS method=CILTestSuite.VerifyLabVisitsOnDashboard()[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a]" name="beforeMethodExtentSetup" is-config="true" duration-ms="5019" started-at="2018-01-05T16:35:53Z" finished-at="2018-01-05T16:35:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.cil.ui.CILTestSuite.VerifyTrendingIdeasOnDashboard() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethodExtentSetup -->
-        <test-method status="PASS" signature="VerifyTrendingIdeasOnDashboard()[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a]" name="VerifyTrendingIdeasOnDashboard" duration-ms="168" started-at="2018-01-05T16:35:58Z" depends-on-methods="com.cil.ui.CILTestSuite.VerifyLabVisitsOnDashboard" finished-at="2018-01-05T16:35:58Z">
+        <test-method status="SKIP" signature="VerifyTrendingIdeasOnDashboard()[pri:0, instance:com.cil.ui.CILTestSuite@42d80b78]" name="VerifyTrendingIdeasOnDashboard" duration-ms="0" started-at="2018-03-03T12:22:36Z" depends-on-methods="com.cil.ui.CILTestSuite.VerifyLabVisitsOnDashboard" finished-at="2018-03-03T12:22:36Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CILTestSuite.VerifyTrendingIdeasOnDashboard()[pri:0, instance:com.cil.ui.CILTestSuite@42d80b78] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CILTestSuite.VerifyTrendingIdeasOnDashboard()[pri:0, instance:com.cil.ui.CILTestSuite@42d80b78] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyTrendingIdeasOnDashboard -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a]" name="getResult" is-config="true" duration-ms="4" started-at="2018-01-05T16:35:58Z" finished-at="2018-01-05T16:35:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=VerifyTrendingIdeasOnDashboard status=SUCCESS method=CILTestSuite.VerifyTrendingIdeasOnDashboard()[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a]" name="beforeMethodExtentSetup" is-config="true" duration-ms="5018" started-at="2018-01-05T16:35:58Z" finished-at="2018-01-05T16:36:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.cil.ui.CILTestSuite.VerifyOpinionPollSubmit() throws java.lang.InterruptedException,java.io.IOException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethodExtentSetup -->
-        <test-method status="PASS" signature="VerifyOpinionPollSubmit()[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a]" name="VerifyOpinionPollSubmit" duration-ms="530" started-at="2018-01-05T16:36:03Z" depends-on-methods="com.cil.ui.CILTestSuite.VerifyTrendingIdeasOnDashboard" finished-at="2018-01-05T16:36:04Z">
+        <test-method status="SKIP" signature="VerifyOpinionPollSubmit()[pri:0, instance:com.cil.ui.CILTestSuite@42d80b78]" name="VerifyOpinionPollSubmit" duration-ms="0" started-at="2018-03-03T12:22:36Z" depends-on-methods="com.cil.ui.CILTestSuite.VerifyTrendingIdeasOnDashboard" finished-at="2018-03-03T12:22:36Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CILTestSuite.VerifyOpinionPollSubmit()[pri:0, instance:com.cil.ui.CILTestSuite@42d80b78] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CILTestSuite.VerifyOpinionPollSubmit()[pri:0, instance:com.cil.ui.CILTestSuite@42d80b78] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyOpinionPollSubmit -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a]" name="getResult" is-config="true" duration-ms="0" started-at="2018-01-05T16:36:04Z" finished-at="2018-01-05T16:36:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=VerifyOpinionPollSubmit status=SUCCESS method=CILTestSuite.VerifyOpinionPollSubmit()[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a]" name="tearDown" is-config="true" duration-ms="2063" started-at="2018-01-05T16:36:04Z" finished-at="2018-01-05T16:36:06Z">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.cil.ui.CILTestSuite@42d80b78]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-03-03T12:22:36Z" finished-at="2018-03-03T12:22:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.cil.ui.CILTestSuite@43bd930a]" name="endReport" is-config="true" duration-ms="345" started-at="2018-01-05T16:36:59Z" finished-at="2018-01-05T16:36:59Z">
+        <test-method status="SKIP" signature="endReport()[pri:0, instance:com.cil.ui.CILTestSuite@42d80b78]" name="endReport" is-config="true" duration-ms="0" started-at="2018-03-03T12:22:36Z" finished-at="2018-03-03T12:22:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
       </class> <!-- com.cil.ui.CILTestSuite -->
-      <class name="com.cil.ui.CILTestSuite2">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.cil.ui.CILTestSuite2@5891e32e]" name="setUp" is-config="true" duration-ms="7773" started-at="2018-01-05T16:36:06Z" finished-at="2018-01-05T16:36:13Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.CILTestSuite2@5891e32e]" name="beforeMethodExtentSetup" is-config="true" duration-ms="5023" started-at="2018-01-05T16:36:13Z" finished-at="2018-01-05T16:36:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.cil.ui.CILTestSuite2.VerifyLinksOnCILHomePage() throws java.io.IOException,java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethodExtentSetup -->
-        <test-method status="PASS" signature="VerifyLinksOnCILHomePage()[pri:0, instance:com.cil.ui.CILTestSuite2@5891e32e]" name="VerifyLinksOnCILHomePage" duration-ms="13372" started-at="2018-01-05T16:36:18Z" finished-at="2018-01-05T16:36:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyLinksOnCILHomePage -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.CILTestSuite2@5891e32e]" name="getResult" is-config="true" duration-ms="0" started-at="2018-01-05T16:36:32Z" finished-at="2018-01-05T16:36:32Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=VerifyLinksOnCILHomePage status=SUCCESS method=CILTestSuite2.VerifyLinksOnCILHomePage()[pri:0, instance:com.cil.ui.CILTestSuite2@5891e32e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="beforeMethodExtentSetup(java.lang.reflect.Method)[pri:0, instance:com.cil.ui.CILTestSuite2@5891e32e]" name="beforeMethodExtentSetup" is-config="true" duration-ms="5017" started-at="2018-01-05T16:36:32Z" finished-at="2018-01-05T16:36:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.cil.ui.CILTestSuite2.VerifySignUpFunctionalityOnCILTest() throws java.io.IOException,java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethodExtentSetup -->
-        <test-method status="PASS" signature="VerifySignUpFunctionalityOnCILTest()[pri:1, instance:com.cil.ui.CILTestSuite2@5891e32e]" name="VerifySignUpFunctionalityOnCILTest" duration-ms="19720" started-at="2018-01-05T16:36:37Z" finished-at="2018-01-05T16:36:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifySignUpFunctionalityOnCILTest -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.cil.ui.CILTestSuite2@5891e32e]" name="getResult" is-config="true" duration-ms="0" started-at="2018-01-05T16:36:57Z" finished-at="2018-01-05T16:36:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=VerifySignUpFunctionalityOnCILTest status=SUCCESS method=CILTestSuite2.VerifySignUpFunctionalityOnCILTest()[pri:1, instance:com.cil.ui.CILTestSuite2@5891e32e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.cil.ui.CILTestSuite2@5891e32e]" name="tearDown" is-config="true" duration-ms="2076" started-at="2018-01-05T16:36:57Z" finished-at="2018-01-05T16:36:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.cil.ui.CILTestSuite2 -->
-    </test> <!-- CIL Test Cases1 -->
+    </test> <!-- CIL Test Cases -->
   </suite> <!-- Test Suite: CIL Test Suite -->
 </testng-results>
